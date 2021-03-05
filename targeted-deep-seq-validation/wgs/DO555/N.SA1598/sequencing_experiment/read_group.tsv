@@ -1,0 +1,4 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	BI:D24YN_7	BI:D24YN_7	964bac8f-43cc-4a47-b233-53798d287029	BI:D24YNACXX130522_7_TCTGCAAG	true	PCAWG.13985b6b-d7b6-4efd-9c53-288f4d269a0c.bam	PCAWG.13985b6b-d7b6-4efd-9c53-288f4d269a0c.bam	101	101	0		WGS:BI:Solexa-158565
+read_group	BI:D25R3_7	BI:D25R3_7	964bac8f-43cc-4a47-b233-53798d287029	BI:D25R3ACXX130522_7_TCTGCAAG	true	PCAWG.13985b6b-d7b6-4efd-9c53-288f4d269a0c.bam	PCAWG.13985b6b-d7b6-4efd-9c53-288f4d269a0c.bam	101	101	0		WGS:BI:Sage-155746
+read_group	BI:D25R3_8	BI:D25R3_8	964bac8f-43cc-4a47-b233-53798d287029	BI:D25R3ACXX130522_8_TCTGCAAG	true	PCAWG.13985b6b-d7b6-4efd-9c53-288f4d269a0c.bam	PCAWG.13985b6b-d7b6-4efd-9c53-288f4d269a0c.bam	101	101	0		WGS:BI:Sage-155746

@@ -1,0 +1,4 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	BI:C0V04_1	BI:C0V04_1	b8e83a08-d46e-43aa-b94e-9b37e51de9a0	BI:C0V04ACXX120821_1_TACTTAGC	true	PCAWG.000f332c-7fd9-4515-bf5f-9b77db43a3fd.bam	PCAWG.000f332c-7fd9-4515-bf5f-9b77db43a3fd.bam	101	101	0		WGS:BI:Sage-113802
+read_group	BI:D144D_4	BI:D144D_4	b8e83a08-d46e-43aa-b94e-9b37e51de9a0	BI:D144DACXX120817_4_TACTTAGC	true	PCAWG.000f332c-7fd9-4515-bf5f-9b77db43a3fd.bam	PCAWG.000f332c-7fd9-4515-bf5f-9b77db43a3fd.bam	101	101	0		WGS:BI:Sage-113844
+read_group	BI:D144D_8	BI:D144D_8	b8e83a08-d46e-43aa-b94e-9b37e51de9a0	BI:D144DACXX120817_8_TACTTAGC	true	PCAWG.000f332c-7fd9-4515-bf5f-9b77db43a3fd.bam	PCAWG.000f332c-7fd9-4515-bf5f-9b77db43a3fd.bam	101	101	0		WGS:BI:Sage-113844

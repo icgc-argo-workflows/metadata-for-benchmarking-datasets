@@ -1,0 +1,4 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	BCM:0	BCM:0	4f58250a-9ebe-4a5b-9c6a-f804be2d1add	BCM:130114_SN738_0349_BD1MDTACXX_7	true	PCAWG.88eb7362-ea2f-43e7-861d-e9b70dce04f3.bam	PCAWG.88eb7362-ea2f-43e7-861d-e9b70dce04f3.bam	101	101	None		WGS:BCM:IWG_TKICH.KO-8416-11A-N_2pA
+read_group	BCM:0_1	BCM:0_1	4f58250a-9ebe-4a5b-9c6a-f804be2d1add	BCM:130105_SN821_0324_BC06BMACXX_6	true	PCAWG.88eb7362-ea2f-43e7-861d-e9b70dce04f3.bam	PCAWG.88eb7362-ea2f-43e7-861d-e9b70dce04f3.bam	101	101	None		WGS:BCM:IWG_TKICH.KO-8416-11A-N_2pA
+read_group	BCM:0_2	BCM:0_2	4f58250a-9ebe-4a5b-9c6a-f804be2d1add	BCM:130117_SN821_0326_BD1MPFACXX_6	true	PCAWG.88eb7362-ea2f-43e7-861d-e9b70dce04f3.bam	PCAWG.88eb7362-ea2f-43e7-861d-e9b70dce04f3.bam	101	101	None		WGS:BCM:IWG_TKICH.KO-8416-11A-N_2pA

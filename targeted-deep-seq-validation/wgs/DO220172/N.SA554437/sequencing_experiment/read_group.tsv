@@ -1,0 +1,4 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	WUGSC:2893867311	WUGSC:2893867311	87eb7494-f142-49a7-8a5e-4f862311d40c	WUGSC:C3M0UACXX_7	true	PCAWG.2ebf592b-a06d-442c-8b79-743df0d2d0f0.bam	PCAWG.2ebf592b-a06d-442c-8b79-743df0d2d0f0.bam	100	100	0		WGS:WUGSC:H_MV-IS-A3KA-10A-01D-A21Q-09-lg1-lib1b
+read_group	WUGSC:2893867321	WUGSC:2893867321	87eb7494-f142-49a7-8a5e-4f862311d40c	WUGSC:C3M0UACXX_6	true	PCAWG.2ebf592b-a06d-442c-8b79-743df0d2d0f0.bam	PCAWG.2ebf592b-a06d-442c-8b79-743df0d2d0f0.bam	100	100	0		WGS:WUGSC:H_MV-IS-A3KA-10A-01D-A21Q-09-lg1-lib1a
+read_group	WUGSC:2893867339	WUGSC:2893867339	87eb7494-f142-49a7-8a5e-4f862311d40c	WUGSC:C3M0UACXX_8	true	PCAWG.2ebf592b-a06d-442c-8b79-743df0d2d0f0.bam	PCAWG.2ebf592b-a06d-442c-8b79-743df0d2d0f0.bam	100	100	0		WGS:WUGSC:H_MV-IS-A3KA-10A-01D-A21Q-09-lg1-lib1c

@@ -1,0 +1,5 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	WTSI52282	WTSI52282	05aef675-276e-41e7-be6c-acc71bd426bd	WTSI:20491_1	true	ce75215d7dab7c3c3e68769efadd7b76.bam	ce75215d7dab7c3c3e68769efadd7b76.bam	100	100	290		WGS:WTSI:28684
+read_group	WTSI52283	WTSI52283	05aef675-276e-41e7-be6c-acc71bd426bd	WTSI:20492_5	true	ce75215d7dab7c3c3e68769efadd7b76.bam	ce75215d7dab7c3c3e68769efadd7b76.bam	100	100	290		WGS:WTSI:28684
+read_group	WTSI52284	WTSI52284	05aef675-276e-41e7-be6c-acc71bd426bd	WTSI:20045_7	true	ce75215d7dab7c3c3e68769efadd7b76.bam	ce75215d7dab7c3c3e68769efadd7b76.bam	100	100	290		WGS:WTSI:28684
+read_group	WTSI52285	WTSI52285	05aef675-276e-41e7-be6c-acc71bd426bd	WTSI:20045_8	true	ce75215d7dab7c3c3e68769efadd7b76.bam	ce75215d7dab7c3c3e68769efadd7b76.bam	100	100	290		WGS:WTSI:28684

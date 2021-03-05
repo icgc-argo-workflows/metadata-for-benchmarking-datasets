@@ -1,0 +1,4 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	BCM:0	BCM:0	2cfc1abc-5f03-480f-b6ca-c0a66dbd0979	BCM:121104_SN1133_0217_BD1D4WACXX_1	true	PCAWG.b53f2539-d20a-4549-b061-fcf3a35be49f.bam	PCAWG.b53f2539-d20a-4549-b061-fcf3a35be49f.bam	101	101	None		WGS:BCM:IWG_IND-TCOL.AA-A01V-11A-N_2pA
+read_group	BCM:0_1	BCM:0_1	2cfc1abc-5f03-480f-b6ca-c0a66dbd0979	BCM:121104_SN1133_0217_BD1D4WACXX_2	true	PCAWG.b53f2539-d20a-4549-b061-fcf3a35be49f.bam	PCAWG.b53f2539-d20a-4549-b061-fcf3a35be49f.bam	101	101	None		WGS:BCM:IWG_IND-TCOL.AA-A01V-11A-N_2pA
+read_group	BCM:0_2	BCM:0_2	2cfc1abc-5f03-480f-b6ca-c0a66dbd0979	BCM:121030_SN7001324_0058_AD1D2VACXX_6	true	PCAWG.b53f2539-d20a-4549-b061-fcf3a35be49f.bam	PCAWG.b53f2539-d20a-4549-b061-fcf3a35be49f.bam	101	101	None		WGS:BCM:IWG_IND-TCOL.AA-A01V-11A-N_2pA

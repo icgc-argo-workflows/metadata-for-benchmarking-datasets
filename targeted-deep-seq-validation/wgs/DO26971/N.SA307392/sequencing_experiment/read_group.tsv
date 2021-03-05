@@ -1,0 +1,5 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	BI:B0178_5	BI:B0178_5	4bf50875-e55f-461a-abb0-a08d757e574a	BI:B0178ACXX110614_5_CCAGTTAG	true	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	101	101	None		WGS:BI:Solexa-65493
+read_group	BI:B02UB_5	BI:B02UB_5	4bf50875-e55f-461a-abb0-a08d757e574a	BI:B02UBACXX110719_5_CCAGTTAG	true	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	101	101	None		WGS:BI:Solexa-65493
+read_group	BI:C00RB_6	BI:C00RB_6	4bf50875-e55f-461a-abb0-a08d757e574a	BI:C00RBACXX110811_6_CCAGTTAG	true	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	101	101	None		WGS:BI:Solexa-65506
+read_group	BI:C00RB_7	BI:C00RB_7	4bf50875-e55f-461a-abb0-a08d757e574a	BI:C00RBACXX110811_7_CCAGTTAG	true	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	PCAWG.19efc6e3-91dc-456d-9a03-38ccc7f71f42.bam	101	101	None		WGS:BI:Solexa-65506

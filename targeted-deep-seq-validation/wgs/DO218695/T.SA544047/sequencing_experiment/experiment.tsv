@@ -1,0 +1,2 @@
+type	program_id	submitter_sequencing_experiment_id	submitter_donor_id	gender	submitter_specimen_id	tumour_normal_designation	specimen_type	specimen_tissue_source	submitter_sample_id	sample_type	submitter_matched_normal_sample_id	sequencing_center	platform	platform_model	experimental_strategy	sequencing_date	read_group_count
+experiment	BTCA-SG	34d42b18-1717-4720-a487-4459165c6782	BTCA_donor_A153	male	BTCA_specimen_TA153	Tumour	Primary tumour	Solid tissue	TA153	Total DNA	7113beed-4965-45dc-b125-e37c59d71b7d	CACR	ILLUMINA		WGS	2014-05-07	4
