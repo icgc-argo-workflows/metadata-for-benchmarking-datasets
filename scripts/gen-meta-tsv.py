@@ -4,24 +4,22 @@ import os
 import re
 import gzip
 from io import TextIOWrapper
-from zipfile import ZipFile
 
 import sys
 import argparse
 import csv
-import glob
-import copy
 import json
 
+script_dir = os.path.dirname(os.path.realpath(__file__))
 
-DONOR_INFO = '../pcawg-published-original-metadata/pcawg_donor_clinical_August2016_v9.tsv'
-PCAWG_JSONL = '../pcawg-published-original-metadata/release_may2016.v1.4.jsonl.gz'
-WGS_META = '../pcawg-published-original-metadata/WGS.metadata.tsv.gz'
-RNA_SEQ_META = '../pcawg-published-original-metadata/RNA-Seq.metadata.tsv.gz'
-TARGET_SEQ_META = '../pcawg-published-original-metadata/Targeted-Seq.validation.metadata.tsv.gz'
-TARGET_SEQ_BAM_HEADERS = '../targeted-deep-seq-validation/targeted-seq-bam-info/*.header.gz'
-TARGET_SEQ_BAM_INFO = '../targeted-deep-seq-validation/targeted-seq-bam-info/bam_size_md5sum.tsv'
-TARGET_SEQ_IDS = '../targeted-deep-seq-validation/targeted-seq-bam-info/ids.from_portal_keywords_endpoint.jsonl.gz'
+DONOR_INFO = f'{script_dir}/../pcawg-published-original-metadata/pcawg_donor_clinical_August2016_v9.tsv'
+PCAWG_JSONL = f'{script_dir}/../pcawg-published-original-metadata/release_may2016.v1.4.jsonl.gz'
+WGS_META = f'{script_dir}/../pcawg-published-original-metadata/WGS.metadata.tsv.gz'
+RNA_SEQ_META = f'{script_dir}/../pcawg-published-original-metadata/RNA-Seq.metadata.tsv.gz'
+TARGET_SEQ_META = f'{script_dir}/../pcawg-published-original-metadata/Targeted-Seq.validation.metadata.tsv.gz'
+TARGET_SEQ_BAM_HEADERS = f'{script_dir}/../targeted-deep-seq-validation/targeted-seq-bam-info/*.header.gz'
+TARGET_SEQ_BAM_INFO = f'{script_dir}/../targeted-deep-seq-validation/targeted-seq-bam-info/bam_size_md5sum.tsv'
+TARGET_SEQ_IDS = f'{script_dir}/../targeted-deep-seq-validation/targeted-seq-bam-info/ids.from_portal_keywords_endpoint.jsonl.gz'
 
 """
     OUTPUT
@@ -355,9 +353,13 @@ def output(metadata_info=None, output_dir=None, dataset_type=None):
         with open(read_group_tsv, 'w') as o:
             o.write(read_group_tsv_header)
             for rg in bam_meta['read_groups']:
+                submitter_rg_id = rg['read_group_id_in_bam'].replace("'", "_").replace(":", "_")
+                if len(submitter_rg_id) < 2:
+                    submitter_rg_id += "_"
+
                 o.write("\t".join([
                     'read_group',
-                    rg['read_group_id_in_bam'].replace("'", "_"),
+                    submitter_rg_id,
                     rg['read_group_id_in_bam'],
                     submitter_sequencing_experiment_id,
                     rg['platform_unit'],
