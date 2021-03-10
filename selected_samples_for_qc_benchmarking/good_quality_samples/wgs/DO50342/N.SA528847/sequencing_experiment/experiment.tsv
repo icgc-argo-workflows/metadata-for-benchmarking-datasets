@@ -1,0 +1,2 @@
+type	program_id	submitter_sequencing_experiment_id	submitter_donor_id	gender	submitter_specimen_id	tumour_normal_designation	specimen_type	specimen_tissue_source	submitter_sample_id	sample_type	submitter_matched_normal_sample_id	sequencing_center	platform	platform_model	experimental_strategy	sequencing_date	read_group_count
+experiment	ESAD-UK	1e75385d-1c1e-4a50-841f-3b2f5766159b	OCCAMS-AH-088	male	OC-AH-088-B-F1	Normal	Normal	Blood derived	LP6007426-DNA_A01	Total DNA		CRUK-CI	ILLUMINA	Illumina HiSeq 2000	WGS	2014-07-23	3

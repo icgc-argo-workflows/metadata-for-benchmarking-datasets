@@ -1,0 +1,2 @@
+type	program_id	submitter_sequencing_experiment_id	submitter_donor_id	gender	submitter_specimen_id	tumour_normal_designation	specimen_type	specimen_tissue_source	submitter_sample_id	sample_type	submitter_matched_normal_sample_id	sequencing_center	platform	platform_model	experimental_strategy	sequencing_date	read_group_count
+experiment	ESAD-UK	6eafa27f-1145-4844-a189-28f94772c742	OCCAMS-WG-009	male	OC-WG-009-E-T1	Tumour	Primary tumour	Solid tissue	LP6005334-DNA_F02	Total DNA	1fc4d9ab-0e97-40fa-a18f-3f080405b592	CRUK-CI	ILLUMINA	Illumina HiSeq 2000	WGS	2014-07-26	5

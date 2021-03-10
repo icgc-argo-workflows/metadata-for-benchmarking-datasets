@@ -1,0 +1,2 @@
+type	program_id	submitter_sequencing_experiment_id	submitter_donor_id	gender	submitter_specimen_id	tumour_normal_designation	specimen_type	specimen_tissue_source	submitter_sample_id	sample_type	submitter_matched_normal_sample_id	sequencing_center	platform	platform_model	experimental_strategy	sequencing_date	read_group_count
+experiment	PRAD-UK	05aef675-276e-41e7-be6c-acc71bd426bd	0072_CRUK_PC_0072	male	0072_CRUK_PC_0072_T1	Tumour	Primary tumour	Solid tissue	0072_CRUK_PC_0072_T1_DNA	Total DNA	f9c39eb7-39a6-6626-e040-11ac0d4870c2	WTSI	ILLUMINA	Illumina HiSeq	WGS	2013-03-11	5

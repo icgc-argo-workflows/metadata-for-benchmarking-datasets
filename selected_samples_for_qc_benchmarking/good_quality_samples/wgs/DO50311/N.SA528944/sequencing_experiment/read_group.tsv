@@ -1,0 +1,4 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	CRUK-CI_LP6005333-DNA_C03	CRUK-CI:LP6005333-DNA_C03	c9c8fa5f-c551-4565-ba3d-43ceddc2fdeb	CRUK-CI:LP6005333-DNA_C03_7	true	fdcb1bd7cffca69d15383ca9566c58e0.bam	fdcb1bd7cffca69d15383ca9566c58e0.bam	100	100	0		WGS:CRUK-CI:LP6005333-DNA_C03
+read_group	CRUK-CI_LP6005333-DNA_C03_	CRUK-CI:LP6005333-DNA_C03'	c9c8fa5f-c551-4565-ba3d-43ceddc2fdeb	CRUK-CI:LP6005333-DNA_C03_8	true	fdcb1bd7cffca69d15383ca9566c58e0.bam	fdcb1bd7cffca69d15383ca9566c58e0.bam	100	100	0		WGS:CRUK-CI:LP6005333-DNA_C03
+read_group	CRUK-CI_LP6005333-DNA_C03__	CRUK-CI:LP6005333-DNA_C03''	c9c8fa5f-c551-4565-ba3d-43ceddc2fdeb	CRUK-CI:LP6005333-DNA_C03_1	true	fdcb1bd7cffca69d15383ca9566c58e0.bam	fdcb1bd7cffca69d15383ca9566c58e0.bam	100	100	0		WGS:CRUK-CI:LP6005333-DNA_C03

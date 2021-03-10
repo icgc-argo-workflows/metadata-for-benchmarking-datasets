@@ -1,0 +1,4 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	CRUK-CI_LP6007426-DNA_A01	CRUK-CI:LP6007426-DNA_A01	1e75385d-1c1e-4a50-841f-3b2f5766159b	CRUK-CI:LP6007426-DNA_A01_1	true	d3080e4ebe9276d8f7101af286eba233.bam	d3080e4ebe9276d8f7101af286eba233.bam	100	100	0		WGS:CRUK-CI:LP6007426-DNA_A01
+read_group	CRUK-CI_LP6007426-DNA_A01_	CRUK-CI:LP6007426-DNA_A01'	1e75385d-1c1e-4a50-841f-3b2f5766159b	CRUK-CI:LP6007426-DNA_A01_2	true	d3080e4ebe9276d8f7101af286eba233.bam	d3080e4ebe9276d8f7101af286eba233.bam	100	100	0		WGS:CRUK-CI:LP6007426-DNA_A01
+read_group	CRUK-CI_LP6007426-DNA_A01__	CRUK-CI:LP6007426-DNA_A01''	1e75385d-1c1e-4a50-841f-3b2f5766159b	CRUK-CI:LP6007426-DNA_A01_3	true	d3080e4ebe9276d8f7101af286eba233.bam	d3080e4ebe9276d8f7101af286eba233.bam	100	100	0		WGS:CRUK-CI:LP6007426-DNA_A01
