@@ -1,0 +1,7 @@
+JIRA_Tickets	Exclude_Reason	donor_unique_id	aliquot_id	dcc_specimen_type	library_strategy
+https://jira.oicr.on.ca/browse/PCAWGDATA-140	one tumour has uneven coverage	CMDI-UK::CGP_donor_1338055	f90c3f1d-5788-234d-e040-11ac0c483423	Primary tumour - blood derived (peripheral blood)	WGS
+https://jira.oicr.on.ca/browse/PCAWGDATA-139	Sanger artifact plus probaly very bad control looks like leakage	CMDI-UK::CGP_donor_1338695	f8f13b7f-262e-696a-e040-11ac0d483093	Primary tumour - blood derived (peripheral blood)	WGS
+https://jira.oicr.on.ca/browse/PCAWGDATA-120; https://jira.oicr.on.ca/browse/PCAWGDATA-139	Tumour bam DNA contamination from ContEst, Sanger artifact plus germline LOH on 17q	CMDI-UK::CGP_donor_1500976	f935c981-4aef-d6a4-e040-11ac0c481062	Primary tumour - blood derived (peripheral blood)	WGS
+https://jira.oicr.on.ca/browse/PCAWGDATA-142	14.23% of paired reads map to different chromosomes	CMDI-UK::CGP_donor_1600819	f93a6c0a-d43e-06c7-e040-11ac0c480731	Primary tumour - blood derived (peripheral blood)	WGS
+https://jira.oicr.on.ca/browse/PCAWGDATA-139	contaminated medium level	PRAD-UK::A34-0022_CRUK_PC_0022	0bfe2ac9-0af1-c248-e050-11ac0d487e1c	Metastatic tumour - metastasis to distant location	WGS
+https://jira.oicr.on.ca/browse/PCAWGDATA-160	SP116883, one of the tumours for the same donor misses histological diagnosis information	CMDI-UK::CGP_donor_1364416	f92cf0a2-0172-a1cc-e040-11ac0c486b1a	Primary tumour - blood derived (peripheral blood)	
