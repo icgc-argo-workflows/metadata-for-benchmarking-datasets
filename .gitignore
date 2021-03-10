@@ -66,4 +66,7 @@ logs
 .log
 .vscode
 .python-version
-
+.nextflow*
+work
+outdir
+.idea*
