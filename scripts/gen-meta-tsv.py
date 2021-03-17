@@ -219,14 +219,14 @@ def get_wgs_meta(donor_ids=None, donors=None):
             wgs_meta[row['file_name']]['read_group_count'] += 1
             wgs_meta[row['file_name']]['read_groups'].append(
                 {
-                    'read_length_r1': int(row['read_length_r1']) if len(row['read_length_r1']) > 0 else None,
-                    'read_length_r2': int(row['read_length_r2']) if len(row['read_length_r2']) > 0 else None,
+                    'read_length_r1': int(row['read_length_r1']) if len(row['read_length_r1']) > 0 else '',
+                    'read_length_r2': int(row['read_length_r2']) if len(row['read_length_r2']) > 0 else '',
                     'read_group_id_in_bam': rg['ID'],
                     'platform_unit': rg['PU'],
                     'is_paired_end': True if row['read_length_r2'] else False,
                     'file_r1': row['file_name'],
                     'file_r2': row['file_name'],
-                    'insert_size': int(rg['PI']) if ('PI' in rg and len(rg['PI'])) else None,
+                    'insert_size': int(rg['PI']) if ('PI' in rg and len(rg['PI'])) else '',
                     'sample_barcode': '',
                     'library_name': rg['LB'],
                 }
