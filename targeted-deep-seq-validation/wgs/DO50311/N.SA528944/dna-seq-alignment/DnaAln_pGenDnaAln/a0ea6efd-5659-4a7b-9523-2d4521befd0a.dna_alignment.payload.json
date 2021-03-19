@@ -1,0 +1,118 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "ESAD-UK",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.6.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "nauseous_lamport",
+    "session_id": "2e789970-7813-4e2a-8385-4e0a036b56bc",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "ESAD-UK.DO50311.SA528944.wgs.20210311.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 72269273365,
+      "fileMd5sum": "90aad1fb551ad2b76824212023c700ab",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "ESAD-UK.DO50311.SA528944.wgs.20210311.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 2312013,
+      "fileMd5sum": "c9ffc668a0706304e10ec1d1a0d917b8",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "LP6005333-DNA_C03",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "OC-ST-020-B-F1",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal"
+      },
+      "donor": {
+        "submitterDonorId": "OCCAMS-ST-020",
+        "gender": "male"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "c9c8fa5f-c551-4565-ba3d-43ceddc2fdeb",
+    "sequencing_center": "CRUK-CI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2014-07-27"
+  },
+  "read_group_count": 3,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_C03",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_C03",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_C03_7",
+      "is_paired_end": true,
+      "file_r1": "fdcb1bd7cffca69d15383ca9566c58e0.bam",
+      "file_r2": "fdcb1bd7cffca69d15383ca9566c58e0.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_C03"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_C03_",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_C03'",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_C03_8",
+      "is_paired_end": true,
+      "file_r1": "fdcb1bd7cffca69d15383ca9566c58e0.bam",
+      "file_r2": "fdcb1bd7cffca69d15383ca9566c58e0.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_C03"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_C03__",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_C03''",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_C03_1",
+      "is_paired_end": true,
+      "file_r1": "fdcb1bd7cffca69d15383ca9566c58e0.bam",
+      "file_r2": "fdcb1bd7cffca69d15383ca9566c58e0.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_C03"
+    }
+  ]
+}
