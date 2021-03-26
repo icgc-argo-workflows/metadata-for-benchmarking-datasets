@@ -1,0 +1,37 @@
+{
+  "study_id": "ESAD-UK",
+  "experiment_info_tsv": "sequencing_experiment/experiment.tsv",
+  "read_group_info_tsv": "sequencing_experiment/read_group.tsv",
+  "file_info_tsv": "sequencing_experiment/file.tsv",
+  "extra_info_tsv": "extra_info.tsv",
+  "sequencing_files": "/home/ubuntu/pcawg-wgs-bams/7875b5196f6b8b52847f99bf370aada0.bam",
+  "ref_genome_fa": "/home/ubuntu/references/reference_genome/GRCh38_hla_decoy_ebv.fa",
+  "cpus": 2,
+  "mem": 2,
+  "tempdir": "NO_DIR",
+  "publish_dir": "dna-seq-alignment/outdir",
+  "alignedSeqQC": {
+      "cpus": 4,
+      "mem": 10
+  },
+  "bamMergeSortMarkdup": {
+      "cpus": 4,
+      "mem": 18
+  },
+  "bwaMemAligner": {
+      "cpus": 7,
+      "mem": 30
+  },
+  "gatkCollectOxogMetrics": {
+      "cpus": 3,
+      "mem": 6
+  },
+  "readGroupUBamQC": {
+      "cpus": 3,
+      "mem": 6
+  },
+  "seqDataToLaneBam": {
+      "cpus": 4,
+      "mem": 12
+  }
+}
