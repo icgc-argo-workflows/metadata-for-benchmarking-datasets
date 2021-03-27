@@ -1,0 +1,32 @@
+{
+  "study_id": "TEST-PR",
+  "tumour_aln_metadata": "input/03905962-f1e1-41e8-9059-62f1e1c1e8fc.dna-seq-alignment.json",
+  "tumour_aln_cram": "input/SA610229.103.20200320.wxs.grch38.cram",
+  "tumour_extra_info": "input/T.extra_info.tsv",
+  "normal_aln_metadata": "input/9940db0f-c100-496a-80db-0fc100d96ac1.dna-seq-alignment.json",
+  "normal_aln_cram": "input/SA610228.67.20200319.wxs.grch38.cram",
+  "normal_extra_info": "input/N.extra_info.tsv",
+  "publish_dir": "outdir",
+  "cpus": 2,
+  "mem": 8,
+  "mutect2": {
+    "cpus": 10,
+    "mem": 60
+  },
+  "calculateContamination": {
+    "cpus": 4,
+    "mem": 24
+  },
+  "learnReadOrientationModel": {
+    "cpus": 4,
+    "mem": 24
+  },
+  "perform_bqsr": false,
+  "ref_fa": "/home/ubuntu/references/grch38/GRCh38_hla_decoy_ebv.fa",
+  "mutect2_scatter_interval_files": "/home/ubuntu/gatk-resources/mutect2.scatter_by_chr/chr*.interval_list",
+  "germline_resource_vcfs": [
+    "/home/ubuntu/gatk-resources/af-only-gnomad.pass-only.hg38.vcf.gz"
+  ],
+  "panel_of_normals": "/home/ubuntu/gatk-resources/1000g_pon.hg38.vcf.gz",
+  "contamination_variants": "/home/ubuntu/gatk-resources/af-only-gnomad.pass-only.biallelic.snp.hg38.vcf.gz"
+}
