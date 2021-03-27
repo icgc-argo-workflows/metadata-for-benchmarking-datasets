@@ -107,7 +107,7 @@ Additional files needed for scatter/gather:
 | bqsr.sequence_grouping.grch38_hla_decoy_ebv.csv               | 89497 | 8ea70d26ffae94f8e14f321a7c0e7680 |
 | bqsr.sequence_grouping_with_unmapped.grch38_hla_decoy_ebv.csv | 89509 | 1f6db058b2209485852059ecb69d7535 |
 
-These files have been checked into [GitHub repository](https://github.com/icgc-argo/gatk-mutect2-variant-calling)
+These files have been checked into [GitHub repository](https://github.com/icgc-argo/gatk-mutect2-variant-calling/tree/main/assets)
 for the Mutect2 workflow. To get the files you may just clone the repo, or download using
 `wget` using the URL pattern as in the following example:
 
