@@ -156,9 +156,6 @@ if __name__ == '__main__':
     if not os.path.isfile(args.donor_list_with_paths):
         sys.exit(f'Specified donor list does not exist: {args.donor_list_with_paths}')
 
-    if os.path.isdir(args.output_dir):
-        sys.exit(f'Specified output directory already exists: {args.output_dir}')
-
     main(
         donor_list_with_paths=args.donor_list_with_paths,
         reference_genome_fasta=args.reference_genome_fasta,
