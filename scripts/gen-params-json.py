@@ -12,12 +12,14 @@ WGS_DONOR_METADATA_DIR = os.path.join(base_dir, "targeted-deep-seq-validation", 
 """
 OUTPUT directory structure:
     DONOR_ID
-    ├── N.SAMPLE_ID.json
-    └── T.SAMPLE_ID.json
+    ├── N.SAMPLE_ID
+    │   └── N.SAMPLE_ID.dna-seq-alignment.json
+    └── T.SAMPLE_ID
+        └── T.SAMPLE_ID.dna-seq-alignment.json
 
     with json file structure defined as:
 """
-PARAMS_JSON = '''{{
+DNA_SEQ_ALIGNMENT_PARAMS_JSON = '''{{
   "study_id": "{study_id}",
   "experiment_info_tsv": "{sample_dir}/sequencing_experiment/experiment.tsv",
   "read_group_info_tsv": "{sample_dir}/sequencing_experiment/read_group.tsv",
@@ -88,14 +90,14 @@ def generate_params(donor_list_with_paths, reference_genome_fasta):
                 sample_dir = os.path.join(donor_wgs_dir, sample)
                 if sample.startswith("N"):
                     bam_path=normal_bam
-                    formatted_json = PARAMS_JSON.format(**locals())
+                    formatted_json = DNA_SEQ_ALIGNMENT_PARAMS_JSON.format(**locals())
                     donor_json['normal'] = {
                         'json': formatted_json,
                         'id': sample
                     }
                 elif sample.startswith("T"):
                     bam_path=tumour_bam
-                    formatted_json = PARAMS_JSON.format(**locals())
+                    formatted_json = DNA_SEQ_ALIGNMENT_PARAMS_JSON.format(**locals())
                     donor_json['tumour'] = {
                         'json': formatted_json,
                         'id': sample
@@ -117,13 +119,19 @@ def output(json_strings, output_dir):
         os.makedirs(donor_output_dir)
 
         for sample_type in ['normal', 'tumour']:
-            sample = donor_json[sample_type]
+            # create subdir for each sample
             if not donor_json[sample_type]:
                 print(f'Missing {sample} data for {donor_id}', file=sys.stderr)
-            else:
-                f = open(f'{os.path.join(donor_output_dir, sample["id"])}.json', "w")
-                f.write(sample["json"])
-                f.close()
+                continue
+
+            sample = donor_json[sample_type]
+            sample_output_dir = os.path.join(donor_output_dir, sample["id"])
+            os.makedirs(sample_output_dir)
+
+            # FUTURE: could iterate through list of workflows here
+            f = open(f'{os.path.join(sample_output_dir, sample["id"])}.dna-seq-alignment.json', "w")
+            f.write(sample["json"])
+            f.close()
 
     return
 
