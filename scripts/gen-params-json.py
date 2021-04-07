@@ -116,7 +116,7 @@ def output(json_strings, output_dir):
         # create subdir for each donor
         donor_id = donor_json['donor']
         donor_output_dir = os.path.join(output_dir, donor_id)
-        os.makedirs(donor_output_dir)
+        os.makedirs(donor_output_dir, exist_ok=True)
 
         for sample_type in ['normal', 'tumour']:
             # create subdir for each sample
@@ -126,10 +126,16 @@ def output(json_strings, output_dir):
 
             sample = donor_json[sample_type]
             sample_output_dir = os.path.join(donor_output_dir, sample["id"])
-            os.makedirs(sample_output_dir)
+            os.makedirs(sample_output_dir, exist_ok=True)
 
             # FUTURE: could iterate through list of workflows here
-            f = open(f'{os.path.join(sample_output_dir, sample["id"])}.dna-seq-alignment.json', "w")
+            sample_json_params_file = f'{os.path.join(sample_output_dir, sample["id"])}.dna-seq-alignment.json'
+            try:
+                os.remove(sample_json_params_file)
+            except FileNotFoundError:
+                pass # file doesn't exist yet
+
+            f = open(sample_json_params_file, "w")
             f.write(sample["json"])
             f.close()
 
