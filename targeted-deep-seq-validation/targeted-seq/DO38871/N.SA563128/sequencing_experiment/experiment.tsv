@@ -1,0 +1,2 @@
+type	program_id	submitter_sequencing_experiment_id	submitter_donor_id	gender	submitter_specimen_id	tumour_normal_designation	specimen_type	specimen_tissue_source	submitter_sample_id	sample_type	submitter_matched_normal_sample_id	sequencing_center	platform	platform_model	experimental_strategy	sequencing_date	read_group_count
+experiment	STAD-US	e030c410-3327-43bf-9676-4890a30d9994	TCGA-CD-5802	male	TCGA-CD-5802-10A	Normal	Normal	Blood derived	TCGA-CD-5802-10A-01D-A46A-09	Other DNA enrichments		WUGSC	ILLUMINA	Illumina HiSeq 2500	Targeted-Seq	2015-10-15	6

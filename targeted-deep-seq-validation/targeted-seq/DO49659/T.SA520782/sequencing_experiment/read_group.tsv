@@ -1,0 +1,3 @@
+type	submitter_read_group_id	read_group_id_in_bam	submitter_sequencing_experiment_id	platform_unit	is_paired_end	file_r1	file_r2	read_length_r1	read_length_r2	insert_size	sample_barcode	library_name
+read_group	0_	0	e5a3551c-c8eb-11e5-a0ae-a4aa5ffcf0f7	BCM:151116_SN7001157_0554_BC7L11ACXX_3_ID05	true	67b11b20568a487bd7bdeed3f6aa08d2.bam	67b11b20568a487bd7bdeed3f6aa08d2.bam	125	125	0		VALIDATION:BCM:ICGCDW.BW-A5NQ-01A-T_1AMP
+read_group	1_	1	e5a3551c-c8eb-11e5-a0ae-a4aa5ffcf0f7	BCM:151115_SN7001324_0473_AC7L9WACXX_3_ID05	true	67b11b20568a487bd7bdeed3f6aa08d2.bam	67b11b20568a487bd7bdeed3f6aa08d2.bam	125	125	0		VALIDATION:BCM:ICGCDW.BW-A5NQ-01A-T_1AMP

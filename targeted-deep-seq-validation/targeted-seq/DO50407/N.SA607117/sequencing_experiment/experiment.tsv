@@ -1,0 +1,2 @@
+type	program_id	submitter_sequencing_experiment_id	submitter_donor_id	gender	submitter_specimen_id	tumour_normal_designation	specimen_type	specimen_tissue_source	submitter_sample_id	sample_type	submitter_matched_normal_sample_id	sequencing_center	platform	platform_model	experimental_strategy	sequencing_date	read_group_count
+experiment	ESAD-UK	90352362-c86e-11e5-a6b3-bef3a844ac51	OCCAMS-WG-009	male	OC-WG-009-B-F1	Normal	Normal	Blood derived	OC-WG-009-B-F1_V01	Other DNA enrichments		WUGSC	ILLUMINA	Illumina HiSeq 2500	Targeted-Seq	2015-08-06	6

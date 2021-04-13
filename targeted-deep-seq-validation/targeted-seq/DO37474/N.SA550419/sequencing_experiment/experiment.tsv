@@ -1,0 +1,2 @@
+type	program_id	submitter_sequencing_experiment_id	submitter_donor_id	gender	submitter_specimen_id	tumour_normal_designation	specimen_type	specimen_tissue_source	submitter_sample_id	sample_type	submitter_matched_normal_sample_id	sequencing_center	platform	platform_model	experimental_strategy	sequencing_date	read_group_count
+experiment	SKCM-US	f5c0db9a-c8eb-11e5-9b2b-e2d36d8ed177	TCGA-FS-A1ZK	male	TCGA-FS-A1ZK-10A	Normal	Normal	Blood derived	TCGA-FS-A1ZK-10A-01D-A46A-09	Other DNA enrichments		WUGSC	ILLUMINA	Illumina HiSeq 2500	Targeted-Seq	2015-10-13	6
