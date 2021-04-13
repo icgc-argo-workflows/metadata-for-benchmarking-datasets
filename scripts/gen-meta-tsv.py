@@ -4,7 +4,7 @@ import os
 import re
 import gzip
 from io import TextIOWrapper
-
+from glob import glob
 import sys
 import argparse
 import csv
@@ -20,6 +20,7 @@ TARGET_SEQ_META = f'{script_dir}/../pcawg-published-original-metadata/Targeted-S
 TARGET_SEQ_BAM_HEADERS = f'{script_dir}/../targeted-deep-seq-validation/targeted-seq-bam-info/*.header.gz'
 TARGET_SEQ_BAM_INFO = f'{script_dir}/../targeted-deep-seq-validation/targeted-seq-bam-info/bam_size_md5sum.tsv'
 TARGET_SEQ_IDS = f'{script_dir}/../targeted-deep-seq-validation/targeted-seq-bam-info/ids.from_portal_keywords_endpoint.jsonl.gz'
+TARGET_SEQ_META_JSONL = f'{script_dir}/../targeted-deep-seq-validation/targeted-seq-bam-info/targeted_seq_bam_info.from_portal_file_endpoint.jsonl.gz'
 
 """
     OUTPUT
@@ -107,6 +108,146 @@ def get_donor_info(donor_ids=None):
             }
 
     return donor_info
+
+
+def get_targeted_bam_info(donor_ids):
+    targeted_bam_info = dict()
+
+    # read info from TARGET_SEQ_BAM_INFO (for file size/md5sum) and TARGET_SEQ_META (for tumour/normal pairing)
+
+    bam_info = dict()  # temporary use
+    with open(TARGET_SEQ_BAM_INFO, 'r') as b:
+        for row in b:
+            row = row.strip()
+            bam_name, bam_md5sum, bam_size = row.split('\t')
+
+            bam_info[bam_name] = {
+                'size': bam_size,
+                'md5sum': bam_md5sum
+            }
+
+    with gzip.open(TARGET_SEQ_META, 'r') as j:
+        for row in csv.DictReader(TextIOWrapper(j, 'utf-8'), delimiter='\t'):
+            if row['icgc_donor_id'] not in donor_ids:
+                continue
+
+            normal_bam_name = row['normal_validation_alignment_bam_file_name']
+            normal_gnos_id = row['normal_validation_alignment_gnos_id']
+            normal_aliquot_id = row['normal_validation_aliquot_id']
+            tumour_bam_name = row['tumor_validation_alignment_bam_file_name']
+            tumour_gnos_id = row['tumor_validation_alignment_gnos_id']
+            tumour_aliquot_id = row['tumor_validation_aliquot_id']
+
+            # add normal bam
+            targeted_bam_info[normal_bam_name] = {
+                'size': bam_info[normal_bam_name]['size'],
+                'md5sum': bam_info[normal_bam_name]['md5sum'],
+                'submitter_matched_normal_sample_id': None,
+                'aliquot_id': normal_aliquot_id,
+                'gnos_id': normal_gnos_id
+            }
+
+            # add tumour bam
+            targeted_bam_info[tumour_bam_name] = {
+                'size': bam_info[tumour_bam_name]['size'],
+                'md5sum': bam_info[tumour_bam_name]['md5sum'],
+                'submitter_matched_normal_sample_id': normal_aliquot_id,
+                'aliquot_id': tumour_aliquot_id,
+                'gnos_id': tumour_gnos_id
+            }
+
+    return targeted_bam_info
+
+
+def get_targeted_seq_meta(donor_ids=None, donors=None):
+    read_groups = dict()
+    # get RG info from TARGET_SEQ_BAM_HEADERS
+    for bam_header_file in glob(TARGET_SEQ_BAM_HEADERS):
+        bam_name = os.path.basename(bam_header_file).replace('.header.gz', '')
+        read_groups[bam_name] = []
+
+        with gzip.open(bam_header_file, 'r') as h:
+            for row in TextIOWrapper(h, 'utf-8'):
+                if not row.startswith('@RG'):
+                    continue
+
+                kv_paris = row.strip().split('\t')
+                rg = dict()
+                for kv in kv_paris:
+                    if ':' not in kv:
+                        continue
+
+                    key = kv.split(':')[0]
+                    rg[key] = ':'.join(kv.split(':')[1:])
+
+                read_groups[bam_name].append(rg)
+
+    targeted_bam_info = get_targeted_bam_info(donor_ids)
+    targeted_seq_meta = dict()
+
+    # read from TARGET_SEQ_META_JSONL
+    with gzip.open(TARGET_SEQ_META_JSONL, 'r') as j:
+        for row in TextIOWrapper(j, 'utf-8'):
+            file_meta = json.loads(row)
+            file_doc = file_meta['fileCopies'][0]
+            donor_doc = file_meta['donors'][0]
+
+            if donor_doc['donorId'] not in donor_ids:
+                continue
+
+            if file_doc['fileName'] not in targeted_seq_meta:
+                bam_rgs = read_groups[file_doc['fileName']]
+                targeted_seq_meta[file_doc['fileName']] = {
+                    'project_code': donor_doc['projectCode'],
+                    'icgc_donor_id': donor_doc['donorId'],
+                    'gender': donors[donor_doc['donorId']]['gender'],
+                    'submitter_donor_id': donor_doc['submittedDonorId'],
+                    'aliquot_id': targeted_bam_info[file_doc['fileName']]['aliquot_id'],
+                    'submitter_matched_normal_sample_id': targeted_bam_info[file_doc['fileName']]['submitter_matched_normal_sample_id'],
+                    'submitter_specimen_id': donor_doc['submittedSpecimenId'][0],
+                    'icgc_specimen_id': donor_doc['specimenId'][0],
+                    'submitter_sample_id': donor_doc['submittedSampleId'][0],
+                    'icgc_sample_id': donor_doc['sampleId'][0],
+                    'dcc_specimen_type': donor_doc['specimenType'][0],
+                    'submitter_sequencing_experiment_id': targeted_bam_info[file_doc['fileName']]['gnos_id'],  # use gnos_id as exp_id
+                    'library_strategy': 'Targeted-Seq',
+                    'object_id': file_doc['repoFileId'],
+                    'file_name': file_doc['fileName'],
+                    'file_size': targeted_bam_info[file_doc['fileName']]['size'],
+                    'file_md5sum': targeted_bam_info[file_doc['fileName']]['md5sum'],
+                    'read_group_count': len(bam_rgs),
+                    'read_groups': [],
+                }
+
+                if targeted_seq_meta[file_doc['fileName']]['project_code'].endswith('-US'):
+                    read_length = '125'
+                else:
+                    read_length = '100'
+
+                for rg in bam_rgs:
+                    targeted_seq_meta[file_doc['fileName']]['read_groups'].append(
+                        {
+                            'read_length_r1': read_length,
+                            'read_length_r2': read_length,
+                            'read_group_id_in_bam': rg['ID'],
+                            'platform_unit': rg['PU'],
+                            'is_paired_end': True,
+                            'file_r1': file_doc['fileName'],
+                            'file_r2': file_doc['fileName'],
+                            'insert_size': int(rg['PI']) if ('PI' in rg and len(rg['PI'])) else '',
+                            'sample_barcode': '',
+                            'library_name': rg['LB'],
+                        }
+                    )
+
+                    # all read groups from the same BAM should share the same value for the following fields
+                    targeted_seq_meta[file_doc['fileName']]['platform'] = rg['PL']
+                    targeted_seq_meta[file_doc['fileName']]['platform_model'] = rg['PM']
+                    targeted_seq_meta[file_doc['fileName']]['sequencing_date'] = rg['DT'].split('T')[0]  # only need the date
+                    targeted_seq_meta[file_doc['fileName']]['sequencing_center'] = rg['CN']
+                    assert rg['SM'] == targeted_seq_meta[file_doc['fileName']]['aliquot_id']
+
+    return targeted_seq_meta
 
 
 def get_wgs_bam_info(donor_ids):
@@ -383,6 +524,10 @@ def main(donor_list_file, output_dir, dataset_type='wgs'):
     if dataset_type == 'wgs':
         wgs_meta = get_wgs_meta(donor_ids, donors)
         output(metadata_info=wgs_meta, output_dir=output_dir, dataset_type=dataset_type)
+
+    elif dataset_type == 'targeted-seq':
+        targeted_seq_meta = get_targeted_seq_meta(donor_ids, donors)
+        output(metadata_info=targeted_seq_meta, output_dir=output_dir, dataset_type=dataset_type)
 
 
 if __name__ == '__main__':
