@@ -50,19 +50,24 @@
   ],
   "samples": [
     {
-      "submitterSampleId": "70e0b456-65b8-41da-8c57-7ee54d9228cf",
+      "submitterSampleId": "OC-AH-088-B-F1_V01",
       "matchedNormalSubmitterSampleId": null,
-      "sampleType": "Total DNA",
+      "sampleType": "Other DNA enrichments",
       "specimen": {
         "submitterSpecimenId": "OC-AH-088-B-F1",
         "tumourNormalDesignation": "Normal",
         "specimenTissueSource": "Blood derived",
-        "specimenType": "Normal"
+        "specimenType": "Normal",
+        "specimenId": "SP110893",
+        "donorId": "DO50342"
       },
       "donor": {
         "submitterDonorId": "OCCAMS-AH-088",
-        "gender": "Male"
-      }
+        "gender": "male",
+        "donorId": "DO50342"
+      },
+      "sampleId": "SA607111",
+      "specimenId": "SP110893"
     }
   ],
   "experiment": {

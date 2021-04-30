@@ -50,19 +50,24 @@
   ],
   "samples": [
     {
-      "submitterSampleId": "a7760970-4fea-4582-a444-12dbff1e7d9b",
+      "submitterSampleId": "BTCA_specimen_NA153_V01",
       "matchedNormalSubmitterSampleId": null,
-      "sampleType": "Total DNA",
+      "sampleType": "Other DNA enrichments",
       "specimen": {
         "submitterSpecimenId": "BTCA_specimen_NA153",
         "tumourNormalDesignation": "Normal",
-        "specimenTissueSource": "Blood derived",
-        "specimenType": "Normal"
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Normal",
+        "specimenId": "SP119032",
+        "donorId": "DO218695"
       },
       "donor": {
         "submitterDonorId": "BTCA_donor_A153",
-        "gender": "Male"
-      }
+        "gender": "male",
+        "donorId": "DO218695"
+      },
+      "sampleId": "SA607102",
+      "specimenId": "SP119032"
     }
   ],
   "experiment": {

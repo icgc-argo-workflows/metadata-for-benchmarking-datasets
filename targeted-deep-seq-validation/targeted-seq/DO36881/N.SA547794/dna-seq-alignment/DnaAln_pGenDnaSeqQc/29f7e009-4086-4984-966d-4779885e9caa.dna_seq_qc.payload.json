@@ -141,19 +141,24 @@
   },
   "samples": [
     {
-      "submitterSampleId": "bbd67e87-d237-4a28-ad8a-89694c8777ab",
+      "submitterSampleId": "TCGA-EI-6917-10A-01D-A469-10",
       "matchedNormalSubmitterSampleId": null,
-      "sampleType": "Total DNA",
+      "sampleType": "Other DNA enrichments",
       "specimen": {
-        "submitterSpecimenId": "1402b955-ba35-4609-b1f3-079a90718c47",
+        "submitterSpecimenId": "TCGA-EI-6917-10A",
         "tumourNormalDesignation": "Normal",
         "specimenTissueSource": "Blood derived",
-        "specimenType": "Normal"
+        "specimenType": "Normal",
+        "specimenId": "SP81319",
+        "donorId": "DO36881"
       },
       "donor": {
-        "submitterDonorId": "0cb21fb0-520f-4105-99ec-697a335115b5",
-        "gender": "Male"
-      }
+        "submitterDonorId": "TCGA-EI-6917",
+        "gender": "male",
+        "donorId": "DO36881"
+      },
+      "sampleId": "SA547794",
+      "specimenId": "SP81319"
     }
   ]
 }

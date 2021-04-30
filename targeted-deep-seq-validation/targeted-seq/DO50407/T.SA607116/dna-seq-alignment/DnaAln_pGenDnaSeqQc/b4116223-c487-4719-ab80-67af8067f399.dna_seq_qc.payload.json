@@ -245,19 +245,24 @@
   },
   "samples": [
     {
-      "submitterSampleId": "be5ece93-1ca0-422f-bdc2-13c288a99278",
+      "submitterSampleId": "OC-WG-009-E-T1_V01",
       "matchedNormalSubmitterSampleId": "de8681cb-8730-4f06-aa97-03ea835863d5",
-      "sampleType": "Total DNA",
+      "sampleType": "Other DNA enrichments",
       "specimen": {
         "submitterSpecimenId": "OC-WG-009-E-T1",
         "tumourNormalDesignation": "Tumour",
         "specimenTissueSource": "Solid tissue",
-        "specimenType": "Primary tumour"
+        "specimenType": "Primary tumour",
+        "specimenId": "SP111054",
+        "donorId": "DO50407"
       },
       "donor": {
         "submitterDonorId": "OCCAMS-WG-009",
-        "gender": "Male"
-      }
+        "gender": "male",
+        "donorId": "DO50407"
+      },
+      "sampleId": "SA607116",
+      "specimenId": "SP111054"
     }
   ]
 }

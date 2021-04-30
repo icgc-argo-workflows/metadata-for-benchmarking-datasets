@@ -50,19 +50,24 @@
   ],
   "samples": [
     {
-      "submitterSampleId": "11c2cb78-ffa3-4359-87c9-25bf3bfc3830",
+      "submitterSampleId": "0065_CRUK_PC_0065_T1_V01",
       "matchedNormalSubmitterSampleId": "76bbebcc-fde6-42ad-bae4-650db2f8f8cb",
-      "sampleType": "Total DNA",
+      "sampleType": "Other DNA enrichments",
       "specimen": {
         "submitterSpecimenId": "0065_CRUK_PC_0065_T1",
         "tumourNormalDesignation": "Tumour",
         "specimenTissueSource": "Solid tissue",
-        "specimenType": "Primary tumour"
+        "specimenType": "Primary tumour",
+        "specimenId": "SP111129",
+        "donorId": "DO50422"
       },
       "donor": {
         "submitterDonorId": "0065_CRUK_PC_0065",
-        "gender": "Male"
-      }
+        "gender": "male",
+        "donorId": "DO50422"
+      },
+      "sampleId": "SA607104",
+      "specimenId": "SP111129"
     }
   ],
   "experiment": {

@@ -245,19 +245,24 @@
   },
   "samples": [
     {
-      "submitterSampleId": "5c823e40-9360-4409-a072-1a2b315f715f",
+      "submitterSampleId": "TCGA-B6-A0RE-01A-11D-A46A-09",
       "matchedNormalSubmitterSampleId": "65957351-2f2c-47c6-b92b-a8e7a78a1364",
-      "sampleType": "Total DNA",
+      "sampleType": "Other DNA enrichments",
       "specimen": {
-        "submitterSpecimenId": "270be245-2239-4e96-a917-79cca40868ba",
+        "submitterSpecimenId": "TCGA-B6-A0RE-01A",
         "tumourNormalDesignation": "Tumour",
         "specimenTissueSource": "Solid tissue",
-        "specimenType": "Primary tumour"
+        "specimenType": "Primary tumour",
+        "specimenId": "SP7421",
+        "donorId": "DO3482"
       },
       "donor": {
-        "submitterDonorId": "08da7c4c-3067-4bcf-9d7a-78566df72e69",
-        "gender": "Female"
-      }
+        "submitterDonorId": "TCGA-B6-A0RE",
+        "gender": "female",
+        "donorId": "DO3482"
+      },
+      "sampleId": "SA551087",
+      "specimenId": "SP7421"
     }
   ]
 }
