@@ -1,0 +1,130 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "STAD-US",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "e174f5b8-c8eb-11e5-9983-dda7d48f21ed",
+    "sequencing_center": "WUGSC",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2500",
+    "experimental_strategy": "Targeted-Seq",
+    "sequencing_date": "2015-10-15"
+  },
+  "read_group_count": 6,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "2895626807",
+      "read_group_id_in_bam": "2895626807",
+      "platform_unit": "WUGSC:C7P6FANXX_5-AGATAGTT-AGATAGTT",
+      "is_paired_end": true,
+      "file_r1": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "file_r2": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:WUGSC:H_SA-CD-5802-01A-11D-A46A-09-lg1-lib1"
+    },
+    {
+      "submitter_read_group_id": "2895626849",
+      "read_group_id_in_bam": "2895626849",
+      "platform_unit": "WUGSC:C7P6FANXX_5-AGCATCAT-AGCATCAT",
+      "is_paired_end": true,
+      "file_r1": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "file_r2": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:WUGSC:H_SA-CD-5802-01A-11D-A46A-09-lg2-lib1"
+    },
+    {
+      "submitter_read_group_id": "2895626891",
+      "read_group_id_in_bam": "2895626891",
+      "platform_unit": "WUGSC:C7P6FANXX_4-AGATAGTT-AGATAGTT",
+      "is_paired_end": true,
+      "file_r1": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "file_r2": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:WUGSC:H_SA-CD-5802-01A-11D-A46A-09-lg1-lib1"
+    },
+    {
+      "submitter_read_group_id": "2895626903",
+      "read_group_id_in_bam": "2895626903",
+      "platform_unit": "WUGSC:C7P6FANXX_4-AGCATCAT-AGCATCAT",
+      "is_paired_end": true,
+      "file_r1": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "file_r2": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:WUGSC:H_SA-CD-5802-01A-11D-A46A-09-lg2-lib1"
+    },
+    {
+      "submitter_read_group_id": "2895626920",
+      "read_group_id_in_bam": "2895626920",
+      "platform_unit": "WUGSC:C7P6FANXX_3-AGATAGTT-AGATAGTT",
+      "is_paired_end": true,
+      "file_r1": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "file_r2": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:WUGSC:H_SA-CD-5802-01A-11D-A46A-09-lg1-lib1"
+    },
+    {
+      "submitter_read_group_id": "2895626939",
+      "read_group_id_in_bam": "2895626939",
+      "platform_unit": "WUGSC:C7P6FANXX_3-AGCATCAT-AGCATCAT",
+      "is_paired_end": true,
+      "file_r1": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "file_r2": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:WUGSC:H_SA-CD-5802-01A-11D-A46A-09-lg2-lib1"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "TCGA-CD-5802-01A-11D-A46A-09",
+      "matchedNormalSubmitterSampleId": "7a071651-4b4e-45ac-8cf3-8abab671b40b",
+      "sampleType": "Other DNA enrichments",
+      "specimen": {
+        "submitterSpecimenId": "TCGA-CD-5802-01A",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour",
+        "specimenId": "SP85431",
+        "donorId": "DO38871"
+      },
+      "donor": {
+        "submitterDonorId": "TCGA-CD-5802",
+        "gender": "male",
+        "donorId": "DO38871"
+      },
+      "sampleId": "SA563123",
+      "specimenId": "SP85431"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "62f2ee9101e37d860fa89475124a7c0e.bam",
+      "fileSize": 12829555018,
+      "fileMd5sum": "ef4bf9242e2c071a2b2d342297c4cc8b",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}

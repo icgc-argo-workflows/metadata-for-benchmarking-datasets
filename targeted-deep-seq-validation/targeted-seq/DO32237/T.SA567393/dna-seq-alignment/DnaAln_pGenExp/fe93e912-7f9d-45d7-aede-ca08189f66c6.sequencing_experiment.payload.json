@@ -1,0 +1,78 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "OV-US",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "f4d59b26-c8eb-11e5-b401-c2630e1f8944",
+    "sequencing_center": "BCM",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "Targeted-Seq",
+    "sequencing_date": "2015-11-23"
+  },
+  "read_group_count": 2,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "0_",
+      "read_group_id_in_bam": "0",
+      "platform_unit": "BCM:151116_SN7001157_0554_BC7L11ACXX_1_ID01",
+      "is_paired_end": true,
+      "file_r1": "8d8f310ad0fb58a71e6fde5284af0bd9.bam",
+      "file_r2": "8d8f310ad0fb58a71e6fde5284af0bd9.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:BCM:ICGCDW.24-2024-01A-T_1AMP"
+    },
+    {
+      "submitter_read_group_id": "1_",
+      "read_group_id_in_bam": "1",
+      "platform_unit": "BCM:151115_SN7001324_0473_AC7L9WACXX_1_ID01",
+      "is_paired_end": true,
+      "file_r1": "8d8f310ad0fb58a71e6fde5284af0bd9.bam",
+      "file_r2": "8d8f310ad0fb58a71e6fde5284af0bd9.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "VALIDATION:BCM:ICGCDW.24-2024-01A-T_1AMP"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "TCGA-24-2024-01A-02D-A469-10",
+      "matchedNormalSubmitterSampleId": "51e5b081-40e0-4169-8c4e-010f40862592",
+      "sampleType": "Other DNA enrichments",
+      "specimen": {
+        "submitterSpecimenId": "TCGA-24-2024-01A",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour",
+        "specimenId": "SP68348",
+        "donorId": "DO32237"
+      },
+      "donor": {
+        "submitterDonorId": "TCGA-24-2024",
+        "gender": "female",
+        "donorId": "DO32237"
+      },
+      "sampleId": "SA567393",
+      "specimenId": "SP68348"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "8d8f310ad0fb58a71e6fde5284af0bd9.bam",
+      "fileSize": 13892920870,
+      "fileMd5sum": "10407b621cfe329f08f363502ba0244f",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}
