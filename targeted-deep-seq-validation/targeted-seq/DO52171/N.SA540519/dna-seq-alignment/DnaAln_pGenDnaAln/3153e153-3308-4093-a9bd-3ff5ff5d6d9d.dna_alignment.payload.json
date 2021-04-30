@@ -1,0 +1,105 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "LIHC-US",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.5.5",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "sharp_waddington",
+    "session_id": "bde176de-f545-4f33-bba3-151429830910",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "LIHC-US.DO52171.3033ae06-ebb4-4dbb-9f60-b9b9d5c72805.targeted-seq.20201227.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 6828446654,
+      "fileMd5sum": "2303db751ba85acd05d636c9ff7c8ac2",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "LIHC-US.DO52171.3033ae06-ebb4-4dbb-9f60-b9b9d5c72805.targeted-seq.20201227.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 281332,
+      "fileMd5sum": "ad30731f39e0ffd1e6cf937afaa998cf",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "3033ae06-ebb4-4dbb-9f60-b9b9d5c72805",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "6cb5ce01-84fe-45bc-84d3-c26ab190503d",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal"
+      },
+      "donor": {
+        "submitterDonorId": "ee63c44b-91f4-4004-8dea-192eab527036",
+        "gender": "Male"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "EXP",
+    "sequencing_center": "BCM",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "Targeted-Seq",
+    "sequencing_date": "2015-11-23"
+  },
+  "read_group_count": 2,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "00",
+      "read_group_id_in_bam": "0",
+      "platform_unit": "151116_SN7001157_0554_BC7L11ACXX_3_ID09",
+      "is_paired_end": true,
+      "file_r1": "fa63560b2bcd426311c5d39be827464a.bam",
+      "file_r2": "fa63560b2bcd426311c5d39be827464a.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": null,
+      "sample_barcode": null,
+      "library_name": "ICGCDW.BW-A5NO-10A-N_1AMP"
+    },
+    {
+      "submitter_read_group_id": "01",
+      "read_group_id_in_bam": "1",
+      "platform_unit": "151115_SN7001324_0473_AC7L9WACXX_3_ID09",
+      "is_paired_end": true,
+      "file_r1": "fa63560b2bcd426311c5d39be827464a.bam",
+      "file_r2": "fa63560b2bcd426311c5d39be827464a.bam",
+      "read_length_r1": 125,
+      "read_length_r2": 125,
+      "insert_size": null,
+      "sample_barcode": null,
+      "library_name": "ICGCDW.BW-A5NO-10A-N_1AMP"
+    }
+  ]
+}
