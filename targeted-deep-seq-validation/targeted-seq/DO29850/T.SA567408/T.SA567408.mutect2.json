@@ -1,0 +1,24 @@
+{
+  "study_id": "OV-US",
+  "tumour_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO29850/T.SA567408/dna-seq-alignment/DnaAln_pGenDnaAln/cdeef0d4-6dbd-4bea-8915-632f760977bd.dna_alignment.payload.json",
+  "tumour_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0068.63ea3572abe00ae25ebea0ca834f6da9/output/DnaAln_pGenDnaAln/out/OV-US.DO29850.ccf5e523-8ce3-4c71-abc7-d116dda7d1b5.targeted-seq.20201227.aln.cram",
+  "tumour_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO29850/T.SA567408/extra_info.tsv",
+  "normal_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO29850/N.SA567409/dna-seq-alignment/DnaAln_pGenDnaAln/fd218c65-fcc2-4077-876f-6923c852bcc8.dna_alignment.payload.json",
+  "normal_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0067.8021996e41b2159014c8c94a7810ee20/output/DnaAln_pGenDnaAln/out/OV-US.DO29850.e415f2a0-93c5-4468-8a82-2f7270ca7907.targeted-seq.20201227.aln.cram",
+  "normal_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO29850/N.SA567409/extra_info.tsv",
+  "publish_dir": "gatk-mutect2-variant-calling",
+  "perform_bqsr": false,
+  "ref_fa": "/home/ubuntu/references/gatk-resources/../reference_genome/GRCh38_hla_decoy_ebv.fa",
+  "mutect2_scatter_interval_files": "/home/ubuntu/references/gatk-resources/mutect2.scatter_by_chr/chr*.interval_list",
+  "germline_resource_vcfs": [
+    "/home/ubuntu/references/gatk-resources/af-only-gnomad.pass-only.hg38.vcf.gz"
+  ],
+  "panel_of_normals": "/home/ubuntu/references/gatk-resources/1000g_pon.hg38.vcf.gz",
+  "contamination_variants": "/home/ubuntu/references/gatk-resources/af-only-gnomad.pass-only.biallelic.snp.hg38.vcf.gz",
+  "mem": 4,
+  "cpus": 2,
+  "mutect2": {
+    "mem": 12,
+    "cpus": 4
+  }
+}

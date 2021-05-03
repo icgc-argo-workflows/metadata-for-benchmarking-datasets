@@ -87,8 +87,8 @@ GATK_MUTECT2_PARAMS_JSON = '''{{
   "mem": 4,
   "cpus": 2,
   "mutect2": {{
-    "mem": 60,
-    "cpus": 10
+    "mem": 12,
+    "cpus": 4
   }}
 }}
 '''
