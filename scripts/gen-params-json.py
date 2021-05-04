@@ -60,10 +60,10 @@ DNA_SEQ_ALIGNMENT_PARAMS_JSON = '''{{
 
 
 """
-OUTPUT directory structure for GATK Mutect2:
+OUTPUT directory structure for variant calling workflows:
     DONOR_ID
     └── T.SAMPLE_ID
-        └── T.SAMPLE_ID.gatk-mutect2-variant-calling.json
+        └── T.SAMPLE_ID.<workflow_type>.json
 
     with json file structure defined as:
 """
@@ -94,6 +94,62 @@ GATK_MUTECT2_PARAMS_JSON = '''{{
 '''
 
 
+SANGER_WGS_PARAMS_JSON = '''{{
+  "study_id": "{study_id}",
+  "tumour_aln_metadata": "{tumour_sample_dir}/dna-seq-alignment/DnaAln_pGenDnaAln/{tumour_metadata_json}",
+  "tumour_aln_cram": "{tumour_cram}",
+  "tumour_extra_info": "{tumour_sample_dir}/extra_info.tsv",
+  "normal_aln_metadata": "{normal_sample_dir}/dna-seq-alignment/DnaAln_pGenDnaAln/{normal_metadata_json}",
+  "normal_aln_cram": "{normal_cram}",
+  "normal_extra_info": "{normal_sample_dir}/extra_info.tsv",
+  "publish_dir": "sanger-wgs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {{
+    "ref_genome_fa": "{reference_data_dir}/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  }},
+  "sangerWgsVariantCaller": {{
+    "cpus": 8,
+    "mem": 72,
+    "ref_genome_tar": "{reference_data_dir}/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "{reference_data_dir}/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "{reference_data_dir}/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "ref_cnv_sv_tar": "{reference_data_dir}/CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz",
+    "qcset_tar": "{reference_data_dir}/qcGenotype_GRCh38_hla_decoy_ebv.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }}
+}}
+'''
+
+
+SANGER_WXS_PARAMS_JSON = '''{{
+  "study_id": "{study_id}",
+  "tumour_aln_metadata": "{tumour_sample_dir}/dna-seq-alignment/DnaAln_pGenDnaAln/{tumour_metadata_json}",
+  "tumour_aln_cram": "{tumour_cram}",
+  "tumour_extra_info": "{tumour_sample_dir}/extra_info.tsv",
+  "normal_aln_metadata": "{normal_sample_dir}/dna-seq-alignment/DnaAln_pGenDnaAln/{normal_metadata_json}",
+  "normal_aln_cram": "{normal_cram}",
+  "normal_extra_info": "{normal_sample_dir}/extra_info.tsv",
+  "publish_dir": "sanger-wxs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {{
+    "ref_genome_fa": "{reference_data_dir}/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  }},
+  "sangerWxsVariantCaller": {{
+    "cpus": 4,
+    "mem": 32,
+    "ref_genome_tar": "{reference_data_dir}/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "{reference_data_dir}/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "{reference_data_dir}/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }}
+}}
+'''
+
+
 def generate_variant_calling_params(
             donor_list_with_paths,
             reference_data_dir,
@@ -112,6 +168,13 @@ def generate_variant_calling_params(
         ...
     ]
     """
+    if workflow_type == 'mutect2':
+        params_template = GATK_MUTECT2_PARAMS_JSON
+    elif workflow_type == 'sanger-wgs':
+        params_template = SANGER_WGS_PARAMS_JSON
+    elif workflow_type == 'sanger-wxs':
+        params_template = SANGER_WXS_PARAMS_JSON
+
     json_strings = []
     with open(donor_list_with_paths) as tsvfile:
         tsvreader = csv.reader(tsvfile, delimiter="\t")
@@ -146,7 +209,7 @@ def generate_variant_calling_params(
                     sys.exit(f'Unexpected sample "{sample}" without T or N in donor folder: {donor_dir}')
 
             donor_json['tumour'] = {
-                'json': GATK_MUTECT2_PARAMS_JSON.format(**locals()),
+                'json': params_template.format(**locals()),
                 'id': tumour_sample
             }
 
