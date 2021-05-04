@@ -1,0 +1,24 @@
+{
+  "study_id": "ESAD-UK",
+  "tumour_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO50346/T.SA607112/dna-seq-alignment/DnaAln_pGenDnaAln/02215387-534c-4a2d-bbad-bdeddeb392db.dna_alignment.payload.json",
+  "tumour_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0028.ece1c7cbd2d0a67068906f4729337e25/output/DnaAln_pGenDnaAln/out/ESAD-UK.DO50346.f6cce8a8-b9a9-49ac-bb8b-c6b3d8a604f8.targeted-seq.20201230.aln.cram",
+  "tumour_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO50346/T.SA607112/extra_info.tsv",
+  "normal_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO50346/N.SA607113/dna-seq-alignment/DnaAln_pGenDnaAln/cfb87da2-28ba-42ca-8924-a2c88e34890b.dna_alignment.payload.json",
+  "normal_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0027.aea37ddf593161721ab64ba509f91d79/output/DnaAln_pGenDnaAln/out/ESAD-UK.DO50346.558d6cd4-69ae-45e9-b0fc-e0aadcf3dee9.targeted-seq.20201230.aln.cram",
+  "normal_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO50346/N.SA607113/extra_info.tsv",
+  "publish_dir": "sanger-wxs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {
+    "ref_genome_fa": "/home/ubuntu/references/sanger-variant-calling/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  },
+  "sangerWxsVariantCaller": {
+    "cpus": 4,
+    "mem": 32,
+    "ref_genome_tar": "/home/ubuntu/references/sanger-variant-calling/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "/home/ubuntu/references/sanger-variant-calling/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "/home/ubuntu/references/sanger-variant-calling/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }
+}

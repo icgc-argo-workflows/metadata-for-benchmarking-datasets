@@ -1,0 +1,24 @@
+{
+  "study_id": "LIHC-US",
+  "tumour_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO52172/T.SA540527/dna-seq-alignment/DnaAln_pGenDnaAln/2b84b7c4-ba44-4128-8882-29c2bc6b95b9.dna_alignment.payload.json",
+  "tumour_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0056.81b72f613677e58677a4cddf3a1e91a4/output/DnaAln_pGenDnaAln/out/LIHC-US.DO52172.1c00925b-7328-4db0-b930-04aab2d80719.targeted-seq.20201227.aln.cram",
+  "tumour_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO52172/T.SA540527/extra_info.tsv",
+  "normal_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO52172/N.SA540539/dna-seq-alignment/DnaAln_pGenDnaAln/f5f66a0e-9c97-4fe6-ab70-fa62be376950.dna_alignment.payload.json",
+  "normal_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0055.19c5cfe0f25d8f99b27821bea8aed98a/output/DnaAln_pGenDnaAln/out/LIHC-US.DO52172.600ba105-b0f1-4fba-b1ec-0bbfe622e6cf.targeted-seq.20201228.aln.cram",
+  "normal_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO52172/N.SA540539/extra_info.tsv",
+  "publish_dir": "sanger-wxs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {
+    "ref_genome_fa": "/home/ubuntu/references/sanger-variant-calling/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  },
+  "sangerWxsVariantCaller": {
+    "cpus": 4,
+    "mem": 32,
+    "ref_genome_tar": "/home/ubuntu/references/sanger-variant-calling/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "/home/ubuntu/references/sanger-variant-calling/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "/home/ubuntu/references/sanger-variant-calling/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }
+}
