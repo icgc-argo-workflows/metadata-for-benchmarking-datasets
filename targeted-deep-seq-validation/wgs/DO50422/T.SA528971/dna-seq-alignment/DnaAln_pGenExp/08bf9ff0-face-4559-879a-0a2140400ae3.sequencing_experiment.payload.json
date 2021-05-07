@@ -1,0 +1,117 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "PRAD-UK",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "e9f6ba94-4a94-4293-a498-90c3feaac7a9",
+    "sequencing_center": "WTSI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-03-11"
+  },
+  "read_group_count": 5,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "WTSI51101",
+      "read_group_id_in_bam": "WTSI51101",
+      "platform_unit": "WTSI:20043_4",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51102",
+      "read_group_id_in_bam": "WTSI51102",
+      "platform_unit": "WTSI:20043_5",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51103",
+      "read_group_id_in_bam": "WTSI51103",
+      "platform_unit": "WTSI:20043_6",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51104",
+      "read_group_id_in_bam": "WTSI51104",
+      "platform_unit": "WTSI:20043_7",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51105",
+      "read_group_id_in_bam": "WTSI51105",
+      "platform_unit": "WTSI:20043_8",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "0065_CRUK_PC_0065_T1_DNA",
+      "matchedNormalSubmitterSampleId": "f9c3bc8e-dbc1-1ed0-e040-11ac0d4803a9",
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "0065_CRUK_PC_0065_T1",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour",
+        "specimenId": "SP111129",
+        "donorId": "DO50422"
+      },
+      "donor": {
+        "submitterDonorId": "0065_CRUK_PC_0065",
+        "gender": "male",
+        "donorId": "DO50422"
+      },
+      "sampleId": "SA528971",
+      "specimenId": "SP111129"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "fileSize": 137888363265,
+      "fileMd5sum": "0a0cf3ae527d5abc813d99b4ce6a9db2",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}

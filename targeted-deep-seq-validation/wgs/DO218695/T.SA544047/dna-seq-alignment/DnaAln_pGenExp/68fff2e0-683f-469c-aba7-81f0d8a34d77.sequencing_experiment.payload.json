@@ -1,0 +1,104 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "BTCA-SG",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "34d42b18-1717-4720-a487-4459165c6782",
+    "sequencing_center": "CACR",
+    "platform": "ILLUMINA",
+    "platform_model": null,
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2014-05-07"
+  },
+  "read_group_count": 4,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "CACR_TA153_1",
+      "read_group_id_in_bam": "CACR:TA153_1",
+      "platform_unit": "CACR:1_4",
+      "is_paired_end": true,
+      "file_r1": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "file_r2": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 170,
+      "sample_barcode": null,
+      "library_name": "WGS:CACR:WHC112"
+    },
+    {
+      "submitter_read_group_id": "CACR_TA153_2",
+      "read_group_id_in_bam": "CACR:TA153_2",
+      "platform_unit": "CACR:1_1",
+      "is_paired_end": true,
+      "file_r1": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "file_r2": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 170,
+      "sample_barcode": null,
+      "library_name": "WGS:CACR:WHC112"
+    },
+    {
+      "submitter_read_group_id": "CACR_TA153_3",
+      "read_group_id_in_bam": "CACR:TA153_3",
+      "platform_unit": "CACR:1_2",
+      "is_paired_end": true,
+      "file_r1": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "file_r2": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 170,
+      "sample_barcode": null,
+      "library_name": "WGS:CACR:WHC112"
+    },
+    {
+      "submitter_read_group_id": "CACR_TA153_4",
+      "read_group_id_in_bam": "CACR:TA153_4",
+      "platform_unit": "CACR:1_3",
+      "is_paired_end": true,
+      "file_r1": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "file_r2": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 170,
+      "sample_barcode": null,
+      "library_name": "WGS:CACR:WHC112"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "TA153",
+      "matchedNormalSubmitterSampleId": "7113beed-4965-45dc-b125-e37c59d71b7d",
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "BTCA_specimen_TA153",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour",
+        "specimenId": "SP117930",
+        "donorId": "DO218695"
+      },
+      "donor": {
+        "submitterDonorId": "BTCA_donor_A153",
+        "gender": "male",
+        "donorId": "DO218695"
+      },
+      "sampleId": "SA544047",
+      "specimenId": "SP117930"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "a51ad19bf9dcf4819371740c732bcba0.bam",
+      "fileSize": 151632601611,
+      "fileMd5sum": "a51ad19bf9dcf4819371740c732bcba0",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}

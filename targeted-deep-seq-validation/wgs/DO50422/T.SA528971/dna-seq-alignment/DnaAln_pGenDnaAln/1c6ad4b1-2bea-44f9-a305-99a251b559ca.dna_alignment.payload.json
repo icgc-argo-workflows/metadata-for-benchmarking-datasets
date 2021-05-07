@@ -1,0 +1,144 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "PRAD-UK",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.6.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "trusting_solvay",
+    "session_id": "144fada0-1d8b-4c5c-a3af-46f9cf3d014f",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "PRAD-UK.DO50422.SA528971.wgs.20210317.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 90507541632,
+      "fileMd5sum": "cc00d089bb370f12f1992d47ba1e9e7c",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "PRAD-UK.DO50422.SA528971.wgs.20210317.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 2958343,
+      "fileMd5sum": "5651d0f56d5bc08a2801ffdd87a4226d",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "0065_CRUK_PC_0065_T1_DNA",
+      "matchedNormalSubmitterSampleId": "f9c3bc8e-dbc1-1ed0-e040-11ac0d4803a9",
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "0065_CRUK_PC_0065_T1",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour"
+      },
+      "donor": {
+        "submitterDonorId": "0065_CRUK_PC_0065",
+        "gender": "male"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "e9f6ba94-4a94-4293-a498-90c3feaac7a9",
+    "sequencing_center": "WTSI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-03-11"
+  },
+  "read_group_count": 5,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "WTSI51101",
+      "read_group_id_in_bam": "WTSI51101",
+      "platform_unit": "WTSI:20043_4",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51102",
+      "read_group_id_in_bam": "WTSI51102",
+      "platform_unit": "WTSI:20043_5",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51103",
+      "read_group_id_in_bam": "WTSI51103",
+      "platform_unit": "WTSI:20043_6",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51104",
+      "read_group_id_in_bam": "WTSI51104",
+      "platform_unit": "WTSI:20043_7",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    },
+    {
+      "submitter_read_group_id": "WTSI51105",
+      "read_group_id_in_bam": "WTSI51105",
+      "platform_unit": "WTSI:20043_8",
+      "is_paired_end": true,
+      "file_r1": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "file_r2": "0a0cf3ae527d5abc813d99b4ce6a9db2.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 296,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:27836"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "PRAD-UK",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.6.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "sleepy_murdock",
+    "session_id": "965fbf69-459a-4999-947b-adc890e10dc6",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "PRAD-UK.DO50422.SA528981.wgs.20210317.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 83739996145,
+      "fileMd5sum": "b32ca6ed868ce5bc0c6c0b6134a322f2",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "PRAD-UK.DO50422.SA528981.wgs.20210317.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 2551180,
+      "fileMd5sum": "cc285eb4a1871a0d870da8e99b6752b5",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "0065_CRUK_PC_0065_Blood_DNA",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "0065_CRUK_PC_0065_Blood",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal"
+      },
+      "donor": {
+        "submitterDonorId": "0065_CRUK_PC_0065",
+        "gender": "male"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "e9f6ba94-4a94-4293-a498-90c3feaac7a9",
+    "sequencing_center": "WTSI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-03-05"
+  },
+  "read_group_count": 4,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "WTSI53497",
+      "read_group_id_in_bam": "WTSI53497",
+      "platform_unit": "WTSI:20784_2",
+      "is_paired_end": true,
+      "file_r1": "6c3d86485da645825a83c10d90f37098.bam",
+      "file_r2": "6c3d86485da645825a83c10d90f37098.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 300,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:29438"
+    },
+    {
+      "submitter_read_group_id": "WTSI53498",
+      "read_group_id_in_bam": "WTSI53498",
+      "platform_unit": "WTSI:19839_6",
+      "is_paired_end": true,
+      "file_r1": "6c3d86485da645825a83c10d90f37098.bam",
+      "file_r2": "6c3d86485da645825a83c10d90f37098.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 300,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:29438"
+    },
+    {
+      "submitter_read_group_id": "WTSI53499",
+      "read_group_id_in_bam": "WTSI53499",
+      "platform_unit": "WTSI:19839_7",
+      "is_paired_end": true,
+      "file_r1": "6c3d86485da645825a83c10d90f37098.bam",
+      "file_r2": "6c3d86485da645825a83c10d90f37098.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 300,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:29438"
+    },
+    {
+      "submitter_read_group_id": "WTSI53500",
+      "read_group_id_in_bam": "WTSI53500",
+      "platform_unit": "WTSI:19839_8",
+      "is_paired_end": true,
+      "file_r1": "6c3d86485da645825a83c10d90f37098.bam",
+      "file_r2": "6c3d86485da645825a83c10d90f37098.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 300,
+      "sample_barcode": null,
+      "library_name": "WGS:WTSI:29438"
+    }
+  ]
+}

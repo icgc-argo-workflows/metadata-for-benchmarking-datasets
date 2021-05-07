@@ -1,0 +1,118 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "KIRP-US",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.6.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "pensive_swanson",
+    "session_id": "c1329e04-feab-4ccd-bd61-3dbcd935ae36",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "KIRP-US.DO44469.SA495064.wgs.20210315.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 79079590331,
+      "fileMd5sum": "ed8fd19fe6aa9794efc63efd0053fcd1",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "KIRP-US.DO44469.SA495064.wgs.20210315.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 2374726,
+      "fileMd5sum": "306ce06a4c32be8d5a8d4665c7cf50e2",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "b87ba993-24fc-4472-bbbc-d4b8af979060",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "612d71e8-08c2-4c2c-b1b3-bfd0228fb2e2",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal"
+      },
+      "donor": {
+        "submitterDonorId": "925ae8ff-3200-4564-be76-94db0984b027",
+        "gender": "male"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "6b677539-15c7-44a3-a6fd-d4a823668252",
+    "sequencing_center": "BCM",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-03-02"
+  },
+  "read_group_count": 3,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "BCM_0",
+      "read_group_id_in_bam": "BCM:0",
+      "platform_unit": "BCM:130123_SN896_0325_AC1MRKACXX_3",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.3a921418-7ca7-41af-aa40-8cc35d64156c.bam",
+      "file_r2": "PCAWG.3a921418-7ca7-41af-aa40-8cc35d64156c.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TKIRP.A4-A48D-10A-N_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_1",
+      "read_group_id_in_bam": "BCM:0_1",
+      "platform_unit": "BCM:130205_SN7001157_0211_BC1K7HACXX_1",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.3a921418-7ca7-41af-aa40-8cc35d64156c.bam",
+      "file_r2": "PCAWG.3a921418-7ca7-41af-aa40-8cc35d64156c.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TKIRP.A4-A48D-10A-N_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_2",
+      "read_group_id_in_bam": "BCM:0_2",
+      "platform_unit": "BCM:130203_SN820_0412_AD1RLPACXX_1",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.3a921418-7ca7-41af-aa40-8cc35d64156c.bam",
+      "file_r2": "PCAWG.3a921418-7ca7-41af-aa40-8cc35d64156c.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TKIRP.A4-A48D-10A-N_1pA"
+    }
+  ]
+}

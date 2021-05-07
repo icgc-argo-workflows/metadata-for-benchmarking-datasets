@@ -1,0 +1,131 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "OV-US",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.6.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "sleepy_boyd",
+    "session_id": "0b6ff5c7-6e05-46d1-bb08-25dad8d8cb3d",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "OV-US.DO32237.SA520078.wgs.20210314.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 91605327412,
+      "fileMd5sum": "d70bb773493f97430f52d31724324998",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "OV-US.DO32237.SA520078.wgs.20210314.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 2985375,
+      "fileMd5sum": "46a4f936ad45acfff7a49c89ab0faa2c",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "46f19b5c-3eba-4b23-a1ab-9748090ca4e5",
+      "matchedNormalSubmitterSampleId": "51e4aa65-d472-4844-9525-779a207954e3",
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "a3f8dcad-c42a-4070-80c4-782627bbaca2",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour"
+      },
+      "donor": {
+        "submitterDonorId": "0a48873a-092a-4b25-822b-b0b3c18c08a8",
+        "gender": "female"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "70526856-e50e-45ef-9a93-17121888f0a8",
+    "sequencing_center": "BCM",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2014-01-23"
+  },
+  "read_group_count": 4,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "BCM_0",
+      "read_group_id_in_bam": "BCM:0",
+      "platform_unit": "BCM:131214_SN7001324_0253_BC2PLDACXX_1",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "file_r2": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TOVA.24-2024-01A-T_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_1",
+      "read_group_id_in_bam": "BCM:0_1",
+      "platform_unit": "BCM:131220_D00222_0203_BC2TYRACXX_5",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "file_r2": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TOVA.24-2024-01A-T_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_2",
+      "read_group_id_in_bam": "BCM:0_2",
+      "platform_unit": "BCM:131231_D00222_0205_BC336PACXX_2",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "file_r2": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TOVA.24-2024-01A-T_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_3",
+      "read_group_id_in_bam": "BCM:0_3",
+      "platform_unit": "BCM:131226_SN7001353_0295_AC3380ACXX_8",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "file_r2": "PCAWG.20b85de1-8cc4-4a57-baa8-656cdde95fa9.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TOVA.24-2024-01A-T_1pA"
+    }
+  ]
+}

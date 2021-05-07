@@ -1,0 +1,117 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "STAD-US",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "250a9d13-6c2f-4d0c-999b-caab3a24d213",
+    "sequencing_center": "BI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-10-27"
+  },
+  "read_group_count": 5,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "BI_C2U9K_7",
+      "read_group_id_in_bam": "BI:C2U9K_7",
+      "platform_unit": "BI:C2U9KACXX131022_7_TGCTCGAC",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "file_r2": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-192278"
+    },
+    {
+      "submitter_read_group_id": "BI_C2URM_5",
+      "read_group_id_in_bam": "BI:C2URM_5",
+      "platform_unit": "BI:C2URMACXX131022_5_TGCTCGAC",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "file_r2": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-192251"
+    },
+    {
+      "submitter_read_group_id": "BI_C31LD_7",
+      "read_group_id_in_bam": "BI:C31LD_7",
+      "platform_unit": "BI:C31LDACXX131028_7_TGCTCGAC",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "file_r2": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-192278"
+    },
+    {
+      "submitter_read_group_id": "BI_C331T_8",
+      "read_group_id_in_bam": "BI:C331T_8",
+      "platform_unit": "BI:C331TACXX131028_8_TGCTCGAC",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "file_r2": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-192278"
+    },
+    {
+      "submitter_read_group_id": "BI_C343B_5",
+      "read_group_id_in_bam": "BI:C343B_5",
+      "platform_unit": "BI:C343BACXX131027_5",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "file_r2": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-192251"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "6dac8ca0-f776-4ea2-85c4-aefba4966be7",
+      "matchedNormalSubmitterSampleId": "8c55d79f-356a-4589-8403-cdfed8311550",
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "4d624b21-5aee-42b8-b192-8afecb51434d",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour",
+        "specimenId": "SP85379",
+        "donorId": "DO38847"
+      },
+      "donor": {
+        "submitterDonorId": "0b4e8d73-459d-4930-9d1a-abb8d53e1844",
+        "gender": "male",
+        "donorId": "DO38847"
+      },
+      "sampleId": "SA443714",
+      "specimenId": "SP85379"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "PCAWG.48b779ea-7651-4346-b6c7-414689670081.bam",
+      "fileSize": 167830020428,
+      "fileMd5sum": "b9ffd16fb24c7dc5f180ff9dbde84df1",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "READ-US",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.6.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "romantic_turing",
+    "session_id": "ca157726-b3a0-4b5e-a8ac-7cbbb18f8190",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "READ-US.DO36945.SA422387.wgs.20210314.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 83455635647,
+      "fileMd5sum": "35ff9f10be353a2e71006b8eb0d2783f",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "READ-US.DO36945.SA422387.wgs.20210314.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 2637402,
+      "fileMd5sum": "9a47958bc0511cf91a0cc7a03157333a",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "cd3d7559-b583-4474-81df-4bf9232de3c2",
+      "matchedNormalSubmitterSampleId": "17b3bb66-b895-4331-836d-fdd2f4d5dc6f",
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "ae3c8931-c06f-466a-b6bf-440007e13387",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour"
+      },
+      "donor": {
+        "submitterDonorId": "0bb786ee-07cf-4853-9b49-ec95cd14e282",
+        "gender": "male"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "15d31ad9-9ef8-495b-bde8-660e0990e744",
+    "sequencing_center": "BCM",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2012-12-25"
+  },
+  "read_group_count": 4,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "BCM_0",
+      "read_group_id_in_bam": "BCM:0",
+      "platform_unit": "BCM:121128_SN7001353_0116_BD1DFCACXX_4",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "file_r2": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TREC.AG-A032-01A-T_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_1",
+      "read_group_id_in_bam": "BCM:0_1",
+      "platform_unit": "BCM:121201_SN733_0345_AC1F98ACXX_1",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "file_r2": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TREC.AG-A032-01A-T_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_2",
+      "read_group_id_in_bam": "BCM:0_2",
+      "platform_unit": "BCM:121201_SN733_0345_AC1F98ACXX_2",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "file_r2": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TREC.AG-A032-01A-T_1pA"
+    },
+    {
+      "submitter_read_group_id": "BCM_0_3",
+      "read_group_id_in_bam": "BCM:0_3",
+      "platform_unit": "BCM:121201_SN733_0345_AC1F98ACXX_3",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "file_r2": "PCAWG.f95a220c-742d-46ee-8110-8bf799142300.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BCM:IWG_TREC.AG-A032-01A-T_1pA"
+    }
+  ]
+}

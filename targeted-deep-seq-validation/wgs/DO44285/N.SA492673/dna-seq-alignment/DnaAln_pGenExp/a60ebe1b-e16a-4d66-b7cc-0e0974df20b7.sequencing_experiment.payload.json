@@ -1,0 +1,91 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "CESC-US",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "bd829214-f230-4331-b234-def10bbe7938",
+    "sequencing_center": "WUGSC",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-11-12"
+  },
+  "read_group_count": 3,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "WUGSC_2893708595",
+      "read_group_id_in_bam": "WUGSC:2893708595",
+      "platform_unit": "WUGSC:C2TVCACXX_8",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.ba8bb154-ef77-4383-99b5-0abc5034aaeb.bam",
+      "file_r2": "PCAWG.ba8bb154-ef77-4383-99b5-0abc5034aaeb.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-C5-A0TN-10B-01D-A200-09-lg1-lib3"
+    },
+    {
+      "submitter_read_group_id": "WUGSC_2893708599",
+      "read_group_id_in_bam": "WUGSC:2893708599",
+      "platform_unit": "WUGSC:C2TVCACXX_6",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.ba8bb154-ef77-4383-99b5-0abc5034aaeb.bam",
+      "file_r2": "PCAWG.ba8bb154-ef77-4383-99b5-0abc5034aaeb.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-C5-A0TN-10B-01D-A200-09-lg1-lib1"
+    },
+    {
+      "submitter_read_group_id": "WUGSC_2893708605",
+      "read_group_id_in_bam": "WUGSC:2893708605",
+      "platform_unit": "WUGSC:C2TVCACXX_7",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.ba8bb154-ef77-4383-99b5-0abc5034aaeb.bam",
+      "file_r2": "PCAWG.ba8bb154-ef77-4383-99b5-0abc5034aaeb.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-C5-A0TN-10B-01D-A200-09-lg1-lib2"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "463d50b1-583c-4531-92de-5df50d8881bf",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "cea46e75-27f2-4349-a4a2-9460cc7eb4d7",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal",
+        "specimenId": "SP96542",
+        "donorId": "DO44285"
+      },
+      "donor": {
+        "submitterDonorId": "14c65927-b9dd-4ef6-9917-db7bc431ff2f",
+        "gender": "female",
+        "donorId": "DO44285"
+      },
+      "sampleId": "SA492673",
+      "specimenId": "SP96542"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "PCAWG.ba8bb154-ef77-4383-99b5-0abc5034aaeb.bam",
+      "fileSize": 92232340499,
+      "fileMd5sum": "1810ee3bf605e0cc568c8153ab6b1cce",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}
