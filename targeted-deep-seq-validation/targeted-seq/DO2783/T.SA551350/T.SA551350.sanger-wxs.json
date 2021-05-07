@@ -1,0 +1,24 @@
+{
+  "study_id": "BRCA-US",
+  "tumour_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO2783/T.SA551350/dna-seq-alignment/DnaAln_pGenDnaAln/8af2e702-f8f3-454c-b0a6-020959288036.dna_alignment.payload.json",
+  "tumour_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0010.7a26099eff4acaca39b23bdb6e6a8aec/output/DnaAln_pGenDnaAln/out/BRCA-US.DO2783.cdb57a9e-458e-451b-a2f5-37d67f8812e3.targeted-seq.20201231.aln.cram",
+  "tumour_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO2783/T.SA551350/extra_info.tsv",
+  "normal_aln_metadata": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO2783/N.SA551351/dna-seq-alignment/DnaAln_pGenDnaAln/81d29c59-e365-42df-96e6-c37026dbfe7f.dna_alignment.payload.json",
+  "normal_aln_cram": "/home/ubuntu/pcawg-v-bams/alignment_jobs/0009.fd068f00dc4baf3e334973d05bc6d40e/output/DnaAln_pGenDnaAln/out/BRCA-US.DO2783.43f96c6e-e90e-4638-86c8-d4ccc5984592.targeted-seq.20201231.aln.cram",
+  "normal_extra_info": "/home/ubuntu/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/targeted-seq/DO2783/N.SA551351/extra_info.tsv",
+  "publish_dir": "sanger-wxs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {
+    "ref_genome_fa": "/home/ubuntu/references/sanger-variant-calling/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  },
+  "sangerWxsVariantCaller": {
+    "cpus": 4,
+    "mem": 32,
+    "ref_genome_tar": "/home/ubuntu/references/sanger-variant-calling/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "/home/ubuntu/references/sanger-variant-calling/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "/home/ubuntu/references/sanger-variant-calling/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }
+}
