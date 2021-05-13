@@ -1,0 +1,117 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "CESC-US",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "1e8faf9d-5754-4c99-a099-7d16c68a64ad",
+    "sequencing_center": "WUGSC",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-11-08"
+  },
+  "read_group_count": 5,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "WUGSC_2893704259",
+      "read_group_id_in_bam": "WUGSC:2893704259",
+      "platform_unit": "WUGSC:C2MD2ACXX_1",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "file_r2": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-EK-A2PK-01A-11D-A18J-09-lg1-lib4"
+    },
+    {
+      "submitter_read_group_id": "WUGSC_2893704275",
+      "read_group_id_in_bam": "WUGSC:2893704275",
+      "platform_unit": "WUGSC:C2MD2ACXX_3",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "file_r2": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-EK-A2PK-01A-11D-A18J-09-lg1-lib5"
+    },
+    {
+      "submitter_read_group_id": "WUGSC_2893704455",
+      "read_group_id_in_bam": "WUGSC:2893704455",
+      "platform_unit": "WUGSC:C2MD2ACXX_5",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "file_r2": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-EK-A2PK-01A-11D-A18J-09-lg1-lib6"
+    },
+    {
+      "submitter_read_group_id": "WUGSC_2893704494",
+      "read_group_id_in_bam": "WUGSC:2893704494",
+      "platform_unit": "WUGSC:C2MD2ACXX_4",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "file_r2": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-EK-A2PK-01A-11D-A18J-09-lg1-lib5"
+    },
+    {
+      "submitter_read_group_id": "WUGSC_2893705496",
+      "read_group_id_in_bam": "WUGSC:2893705496",
+      "platform_unit": "WUGSC:C2MD2ACXX_2",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "file_r2": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:WUGSC:H_MJ-EK-A2PK-01A-11D-A18J-09-lg1-lib4"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "b3b3a27c-ee9a-42af-a6d1-9af5970a98b9",
+      "matchedNormalSubmitterSampleId": "607f3f40-63e5-4182-b77b-2a2b11991004",
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "5f613800-55df-497f-a544-5b12cb9446ce",
+        "tumourNormalDesignation": "Tumour",
+        "specimenTissueSource": "Solid tissue",
+        "specimenType": "Primary tumour",
+        "specimenId": "SP107575",
+        "donorId": "DO48977"
+      },
+      "donor": {
+        "submitterDonorId": "0809ba8b-4ab6-4f43-934c-c1ccbc014a7e",
+        "gender": "female",
+        "donorId": "DO48977"
+      },
+      "sampleId": "SA517453",
+      "specimenId": "SP107575"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "PCAWG.0b2484f8-2bc8-474b-830a-42c68c78c881.bam",
+      "fileSize": 164110044591,
+      "fileMd5sum": "e56bc531924f0069e13fe3894337d2f4",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}

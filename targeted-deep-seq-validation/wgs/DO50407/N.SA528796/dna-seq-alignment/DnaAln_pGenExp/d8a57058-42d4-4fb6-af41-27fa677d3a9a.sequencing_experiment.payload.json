@@ -1,0 +1,130 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "ESAD-UK",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "6eafa27f-1145-4844-a189-28f94772c742",
+    "sequencing_center": "CRUK-CI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2014-07-26"
+  },
+  "read_group_count": 6,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_F02",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_F02",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_F02_1",
+      "is_paired_end": true,
+      "file_r1": "f36e9788a505975b966b1e521c950dfd.bam",
+      "file_r2": "f36e9788a505975b966b1e521c950dfd.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_F02"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_F02_",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_F02'",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_F02_2",
+      "is_paired_end": true,
+      "file_r1": "f36e9788a505975b966b1e521c950dfd.bam",
+      "file_r2": "f36e9788a505975b966b1e521c950dfd.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_F02"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_F02__",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_F02''",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_F02_3",
+      "is_paired_end": true,
+      "file_r1": "f36e9788a505975b966b1e521c950dfd.bam",
+      "file_r2": "f36e9788a505975b966b1e521c950dfd.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_F02"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_F02___",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_F02'''",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_F02_4",
+      "is_paired_end": true,
+      "file_r1": "f36e9788a505975b966b1e521c950dfd.bam",
+      "file_r2": "f36e9788a505975b966b1e521c950dfd.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_F02"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_F02____",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_F02''''",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_F02_5",
+      "is_paired_end": true,
+      "file_r1": "f36e9788a505975b966b1e521c950dfd.bam",
+      "file_r2": "f36e9788a505975b966b1e521c950dfd.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_F02"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6005333-DNA_F02_____",
+      "read_group_id_in_bam": "CRUK-CI:LP6005333-DNA_F02'''''",
+      "platform_unit": "CRUK-CI:LP6005333-DNA_F02_8",
+      "is_paired_end": true,
+      "file_r1": "f36e9788a505975b966b1e521c950dfd.bam",
+      "file_r2": "f36e9788a505975b966b1e521c950dfd.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6005333-DNA_F02"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "LP6005333-DNA_F02",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "OC-WG-009-B-F1",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal",
+        "specimenId": "SP110989",
+        "donorId": "DO50407"
+      },
+      "donor": {
+        "submitterDonorId": "OCCAMS-WG-009",
+        "gender": "male",
+        "donorId": "DO50407"
+      },
+      "sampleId": "SA528796",
+      "specimenId": "SP110989"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "f36e9788a505975b966b1e521c950dfd.bam",
+      "fileSize": 109779799266,
+      "fileMd5sum": "f36e9788a505975b966b1e521c950dfd",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}

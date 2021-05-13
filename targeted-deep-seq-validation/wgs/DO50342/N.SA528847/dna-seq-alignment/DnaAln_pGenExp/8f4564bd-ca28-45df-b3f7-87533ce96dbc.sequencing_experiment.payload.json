@@ -1,0 +1,91 @@
+{
+  "analysisType": {
+    "name": "sequencing_experiment"
+  },
+  "studyId": "ESAD-UK",
+  "experiment": {
+    "submitter_sequencing_experiment_id": "1e75385d-1c1e-4a50-841f-3b2f5766159b",
+    "sequencing_center": "CRUK-CI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2014-07-23"
+  },
+  "read_group_count": 3,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6007426-DNA_A01",
+      "read_group_id_in_bam": "CRUK-CI:LP6007426-DNA_A01",
+      "platform_unit": "CRUK-CI:LP6007426-DNA_A01_1",
+      "is_paired_end": true,
+      "file_r1": "d3080e4ebe9276d8f7101af286eba233.bam",
+      "file_r2": "d3080e4ebe9276d8f7101af286eba233.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6007426-DNA_A01"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6007426-DNA_A01_",
+      "read_group_id_in_bam": "CRUK-CI:LP6007426-DNA_A01'",
+      "platform_unit": "CRUK-CI:LP6007426-DNA_A01_2",
+      "is_paired_end": true,
+      "file_r1": "d3080e4ebe9276d8f7101af286eba233.bam",
+      "file_r2": "d3080e4ebe9276d8f7101af286eba233.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6007426-DNA_A01"
+    },
+    {
+      "submitter_read_group_id": "CRUK-CI_LP6007426-DNA_A01__",
+      "read_group_id_in_bam": "CRUK-CI:LP6007426-DNA_A01''",
+      "platform_unit": "CRUK-CI:LP6007426-DNA_A01_3",
+      "is_paired_end": true,
+      "file_r1": "d3080e4ebe9276d8f7101af286eba233.bam",
+      "file_r2": "d3080e4ebe9276d8f7101af286eba233.bam",
+      "read_length_r1": 100,
+      "read_length_r2": 100,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:CRUK-CI:LP6007426-DNA_A01"
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "LP6007426-DNA_A01",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "OC-AH-088-B-F1",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal",
+        "specimenId": "SP110893",
+        "donorId": "DO50342"
+      },
+      "donor": {
+        "submitterDonorId": "OCCAMS-AH-088",
+        "gender": "male",
+        "donorId": "DO50342"
+      },
+      "sampleId": "SA528847",
+      "specimenId": "SP110893"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "d3080e4ebe9276d8f7101af286eba233.bam",
+      "fileSize": 114327218696,
+      "fileMd5sum": "d3080e4ebe9276d8f7101af286eba233",
+      "fileType": "BAM",
+      "fileAccess": "controlled",
+      "dataType": "Submitted Reads",
+      "info": {
+        "data_category": "Sequencing Reads"
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "analysisType": {
+    "name": "sequencing_alignment"
+  },
+  "studyId": "PRAD-US",
+  "workflow": {
+    "workflow_name": "DNA Seq Alignment",
+    "workflow_version": "1.6.1",
+    "genome_build": "GRCh38_hla_decoy_ebv",
+    "run_id": "drunk_meninsky",
+    "session_id": "ee4f7811-5bc6-4fa6-b6d9-258e40ea9c46",
+    "inputs": [
+      {
+        "analysis_type": "sequencing_experiment",
+        "input_analysis_id": null
+      }
+    ]
+  },
+  "files": [
+    {
+      "fileName": "PRAD-US.DO36356.SA417685.wgs.20210314.aln.cram",
+      "fileType": "CRAM",
+      "fileSize": 59100825123,
+      "fileMd5sum": "bfbad071cfd6bf38c455fd14671a7a8b",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    },
+    {
+      "fileName": "PRAD-US.DO36356.SA417685.wgs.20210314.aln.cram.crai",
+      "fileType": "CRAI",
+      "fileSize": 2058171,
+      "fileMd5sum": "abb64b801d19d97bdef55ff29303e461",
+      "fileAccess": "controlled",
+      "dataType": "Aligned Reads Index",
+      "info": {
+        "data_category": "Sequencing Reads",
+        "analysis_tools": [
+          "BWA-MEM",
+          "biobambam2:bammarkduplicates2"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "submitterSampleId": "263e1015-1061-4ad2-8f7e-ed430d2d9e80",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total DNA",
+      "specimen": {
+        "submitterSpecimenId": "bc487eb7-6a06-467b-9d26-de09895879d8",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Blood derived",
+        "specimenType": "Normal"
+      },
+      "donor": {
+        "submitterDonorId": "11fb5853-8eeb-4ad8-825d-3eaaf3fa08d6",
+        "gender": "male"
+      }
+    }
+  ],
+  "experiment": {
+    "submitter_sequencing_experiment_id": "2a2938e1-6bba-42e4-ba62-04a57dd838bc",
+    "sequencing_center": "BI",
+    "platform": "ILLUMINA",
+    "platform_model": "Illumina HiSeq 2000",
+    "experimental_strategy": "WGS",
+    "sequencing_date": "2013-07-13"
+  },
+  "read_group_count": 4,
+  "read_groups": [
+    {
+      "submitter_read_group_id": "BI_D26TB_3",
+      "read_group_id_in_bam": "BI:D26TB_3",
+      "platform_unit": "BI:D26TBACXX130611_3_TTCGCTGA",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "file_r2": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-162599"
+    },
+    {
+      "submitter_read_group_id": "BI_D2AB4_1",
+      "read_group_id_in_bam": "BI:D2AB4_1",
+      "platform_unit": "BI:D2AB4ACXX130623_1_TTCGCTGA",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "file_r2": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-162607"
+    },
+    {
+      "submitter_read_group_id": "BI_D2AB4_2",
+      "read_group_id_in_bam": "BI:D2AB4_2",
+      "platform_unit": "BI:D2AB4ACXX130623_2_TTCGCTGA",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "file_r2": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-162607"
+    },
+    {
+      "submitter_read_group_id": "BI_H0Y8C_1",
+      "read_group_id_in_bam": "BI:H0Y8C_1",
+      "platform_unit": "BI:H0Y8CADXX130713_1_TTCGCTGA",
+      "is_paired_end": true,
+      "file_r1": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "file_r2": "PCAWG.34f66158-f8af-4de3-b55a-cc44d8ebd143.bam",
+      "read_length_r1": 101,
+      "read_length_r2": 101,
+      "insert_size": 0,
+      "sample_barcode": null,
+      "library_name": "WGS:BI:Solexa-162599"
+    }
+  ]
+}
