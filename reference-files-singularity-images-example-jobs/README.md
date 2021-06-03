@@ -5,7 +5,7 @@ to download and stage them before running the workflows.
 
 ## BWA-MEM DNA-Seq Alignment Workflow
 
-GRCh38 reference genome sequencing and auxilary files:
+### GRCh38 reference genome sequencing and auxilary files
 
 | file name | size | md5sum |
 |--------------------------------|------------|----------------------------------|
@@ -29,6 +29,31 @@ below:
 
 ```
 wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/reference-genome/GRCh38_hla_decoy_ebv/GRCh38_hla_decoy_ebv.dict
+```
+
+### Singularity image files for DNA-Seq Alignment Workflow (v1.8.1)
+| file name | size | md5sum |
+|--------------------------------|------------|----------------------------------|
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-gen-dna-alignment-0.4.0.img   |    466771968    |     2c47868571e03c0e9a614e8b35ae6d65 |
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-gen-dna-seq-qc-0.6.0.img    |      71360512    |      09188f09cd0a6b314a68891ac2182163 |
+| quay.io-icgc-argo-aligned-seq-qc-aligned-seq-qc.0.2.2.1.img    |   436604928    |     0dc56cb4fd64d78108f0c8d1c616b7ec |
+| quay.io-icgc-argo-bam-merge-sort-markdup-bam-merge-sort-markdup.0.1.11.0.img   |   459984896   |      beb4dd3be25f02f6060d1ffb642e579b |
+| quay.io-icgc-argo-bwa-mem-aligner-bwa-mem-aligner.0.1.12.0.img  |  459984896    |     c7d436a9e1e367d763942aeab84a9d5b |
+| quay.io-icgc-argo-gatk-collect-oxog-metrics-gatk-collect-oxog-metrics.4.1.8.0-3.0.img   |  1838567424   |     5839458c95e34d8b4fa70529322858cf |
+| quay.io-icgc-argo-gatk-split-intervals-gatk-split-intervals.4.1.4.1-1.0.img   |    1429229568   |     164a607f74815da8329a071b82e77204 |
+| quay.io-icgc-argo-metadata-parser-metadata-parser.0.1.0.0.img   |  71647232     |     4904869a0c91391c71d2e7d8883e782d |
+| quay.io-icgc-argo-read-group-ubam-qc-read-group-ubam-qc.0.1.2.0.img   |    459984896   |      39b26626c0bd484bd730c5f7d6134e59 |
+| quay.io-icgc-argo-seq-data-to-lane-bam-seq-data-to-lane-bam.0.3.3.0.img  | 459984896   |      91dc04f38f76fcb0b5d74c1e6437c872 |
+| ubuntu-18.04.img     |     25853952     |     3e36f8d4e9c85803d56ef1cabc691f82 |
+
+If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
+the *singularity.cacheDir* to this path in the *nextflow.config* file.
+
+To download the images, please follow the example below:
+
+```
+wget https://object.cancercollaboratory.org:9080/swift/v1/argo-singularity-images/quay.io-icgc-argo-bwa-mem-aligner-bwa-mem-aligner.0.1.12.0.img
 ```
 
 ## Sanger somatic variant calling workflow
