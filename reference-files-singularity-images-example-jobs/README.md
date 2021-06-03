@@ -1,6 +1,6 @@
-# Reference files used by ARGO scientific workflows
+# Reference files and Singularity images derived from Docker images
 
-Reference files used by AROG workflows are hosted at [Cancer Genome Collaboratory](https://cancercollaboratory.org/). Please see the individual sections for the reference files and how
+Reference files used by AROG workflows and Singularity images are hosted at [Cancer Genome Collaboratory](https://cancercollaboratory.org/). Please see the individual sections for the reference files and how
 to download and stage them before running the workflows.
 
 ## BWA-MEM DNA-Seq Alignment Workflow
@@ -33,7 +33,7 @@ wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/r
 
 ## Sanger somatic variant calling workflow
 
-Reference genome and annotation files used by Sanger caller:
+### Reference genome and annotation files used by Sanger caller
 
 | file name | size | md5sum |
 |--------------------------------|------------|----------------------------------|
@@ -50,6 +50,54 @@ below:
 ```
 wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/sanger-variant-calling/qcGenotype_GRCh38_hla_decoy_ebv.tar.gz
 ```
+
+### Singularity image files for Sanger WGS variant caller (v2.1.0-9.6.0)
+| file name | size | md5sum |
+|--------------------------------|------------|----------------------------------|
+| ghcr.io-icgc-argo-data-processing-utility-tools.cleanup-workdir-1.0.0.img  |   27754496  |   af288fdac6358050eacf0be4e9e364f1 |
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-add-uniform-ids-0.1.1.img  |   57327616  |   06fc2f3972d6fff8159da573a11e6ae4 |
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-gen-variant-calling-0.6.0.img  |   304177152   |  dce06ee121749bf4e33f78ca8b636d45 |
+| quay.io-icgc-argo-caveman-vcf-fix-caveman-vcf-fix.0.1.0.0.img  |   509239296  |   0c448debc2d1016e0d2d4fe2d6079127 |
+| quay.io-icgc-argo-generate-bas-generate-bas.0.2.1.0.img   |  384573440   |  8d138b2a04632878646e561571f3a931 |
+| quay.io-icgc-argo-prep-sanger-qc-prep-sanger-qc.0.1.3.0.img  |   57327616  |   f7adcca3c24ef017ce3dd4f82fe15bf2 |
+| quay.io-icgc-argo-prep-sanger-supplement-prep-sanger-supplement.0.1.2.0.img  |   57327616  |   78904fe65a0a1d53a13b439efa385223 |
+| quay.io-icgc-argo-repack-sanger-results-repack-sanger-results.0.2.0.0.img   |  459984896  |   ee755c08930ed6a7ae36115cb0db3a9a |
+| quay.io-icgc-argo-sanger-wgs-variant-caller-sanger-wgs-variant-caller.2.1.0-9.img   |  384573440   |  a46a3e6059f4f769e4d6c67c87b0fe2d |
+| ubuntu-18.04.img  |   25853952  |   3e36f8d4e9c85803d56ef1cabc691f82 |
+
+If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
+the *singularity.cacheDir* to this path in the *nextflow.config* file.
+
+To download the images, please follow the example below:
+
+```
+wget https://object.cancercollaboratory.org:9080/swift/v1/argo-singularity-images/ghcr.io-icgc-argo-data-processing-utility-tools.payload-add-uniform-ids-0.1.1.img
+```
+
+### Input files for testing
+
+| file name | size | md5sum |
+|-----------|------|--------|
+| N.dna_alignment.payload.json | 24761 | 785be595dfa6aec0dfb634835cf57be3 |
+| N.extra_info.tsv | 111 | 0c86d86ae6479fb76438a0f8202d7591 |
+| T.dna_alignment.payload.json | 35870 | bea284d1319e93ad41bac8b6ff382fe5 |
+| T.extra_info.tsv | 105 | 79edd6437e02d7bb5c722597e4202d27 |
+| TEST-PR.DO250183.SA610228.wgs.20200404.aln.cram | 6359358414 | 35d0f666a7f897dc7a12bb3a1fb8f04e |
+| TEST-PR.DO250183.SA610228.wgs.20200404.aln.cram.crai | 308279 | eec86ac4f6561206dd8bdbb50a98e08d |
+| TEST-PR.DO250183.SA610229.wgs.20200404.aln.cram | 9353098543 | 34c28db7b591f2bc5d0f4d91a0bdd194 |
+| TEST-PR.DO250183.SA610229.wgs.20200404.aln.cram.crai | 430812 | 145a3452655003932c0a74ffea889c33 |
+
+The the Nextflow params file is `sanger-wgs-example-job.json` in this folder of the git repo. Please
+modify it to exclude more chromosomes so the test job will finish much quicker. The `exclude` param looks
+like `"exclude":"chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr22,chrX,chrY,chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"`
+
+To download the input files, please follow the example below:
+
+```
+wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/test-datasets/variant-calling/TEST-PR.DO250183.SA610228.wgs.20200404.aln.cram
+```
+
 
 ## GATK Mutect2 somatic variant calling workflow
 
