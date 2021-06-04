@@ -46,7 +46,7 @@ wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/r
 | quay.io-icgc-argo-seq-data-to-lane-bam-seq-data-to-lane-bam.0.3.3.0.img  | 459984896   |      91dc04f38f76fcb0b5d74c1e6437c872 |
 | ubuntu-18.04.img     |     25853952     |     3e36f8d4e9c85803d56ef1cabc691f82 |
 
-If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+If you plan to run the workflow using Singularity, these image files need to be downloaded and transferred to
 a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
 the *singularity.cacheDir* to this path in the *nextflow.config* file.
 
@@ -90,7 +90,7 @@ wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/s
 | quay.io-icgc-argo-sanger-wgs-variant-caller-sanger-wgs-variant-caller.2.1.0-9.img   |  384573440   |  a46a3e6059f4f769e4d6c67c87b0fe2d |
 | ubuntu-18.04.img  |   25853952  |   3e36f8d4e9c85803d56ef1cabc691f82 |
 
-If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+If you plan to run the workflow using Singularity, these image files need to be downloaded and transferred to
 a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
 the *singularity.cacheDir* to this path in the *nextflow.config* file.
 
@@ -139,7 +139,7 @@ wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/t
 | ubuntu-18.04.img | 25853952 | 3e36f8d4e9c85803d56ef1cabc691f82 |
 
 
-If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+If you plan to run the workflow using Singularity, these image files need to be downloaded and transferred to
 a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
 the *singularity.cacheDir* to this path in the *nextflow.config* file.
 
@@ -231,7 +231,7 @@ wget https://raw.githubusercontent.com/icgc-argo/gatk-mutect2-variant-calling/ma
 | quay.io-icgc-argo-gatk-select-variants-gatk-select-variants.4.1.8.0-1.0.img | 1838567424 | 9bcc8d0028f643c99c0b812d07468e9a |
 | quay.io-icgc-argo-prep-mutect2-qc-prep-mutect2-qc.0.1.2.0.img | 304037888 | 76211e21aa690ecbaa14446a110b65e3 |
 
-If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+If you plan to run the workflow using Singularity, these image files need to be downloaded and transferred to
 a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
 the *singularity.cacheDir* to this path in the *nextflow.config* file.
 
