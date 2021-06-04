@@ -124,9 +124,35 @@ wget https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/t
 ```
 
 
+### Singularity image files for Sanger WXS variant caller (v3.1.6-3.6.0)
+| file name | size | md5sum |
+|--------------------------------|------------|----------------------------------|
+| ghcr.io-icgc-argo-data-processing-utility-tools.cleanup-workdir-1.0.0.img | 27754496 | af288fdac6358050eacf0be4e9e364f1 |
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-add-uniform-ids-0.1.1.img | 57327616 | 06fc2f3972d6fff8159da573a11e6ae4 |
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-gen-variant-calling-0.6.0.img | 304177152 | dce06ee121749bf4e33f78ca8b636d45 |
+| quay.io-icgc-argo-caveman-vcf-fix-caveman-vcf-fix.0.1.0.0.img | 509239296 | 0c448debc2d1016e0d2d4fe2d6079127 |
+| quay.io-icgc-argo-generate-bas-generate-bas.0.2.1.0.img | 384573440 | 8d138b2a04632878646e561571f3a931 |
+| quay.io-icgc-argo-prep-sanger-qc-prep-sanger-qc.0.1.3.0.img | 57327616 | f7adcca3c24ef017ce3dd4f82fe15bf2 |
+| quay.io-icgc-argo-prep-sanger-supplement-prep-sanger-supplement.0.1.2.0.img | 57327616 | 78904fe65a0a1d53a13b439efa385223 |
+| quay.io-icgc-argo-repack-sanger-results-repack-sanger-results.0.2.0.0.img | 459984896 | ee755c08930ed6a7ae36115cb0db3a9a |
+| quay.io-icgc-argo-sanger-wxs-variant-caller-sanger-wxs-variant-caller.3.1.6-3.img | 141885440 | cd0a2a7e24f55dcae2c79566e54871b3 |
+| ubuntu-18.04.img | 25853952 | 3e36f8d4e9c85803d56ef1cabc691f82 |
+
+
+If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
+the *singularity.cacheDir* to this path in the *nextflow.config* file.
+
+To download the images, please follow the example below:
+
+```
+wget https://object.cancercollaboratory.org:9080/swift/v1/argo-singularity-images/quay.io-icgc-argo-generate-bas-generate-bas.0.2.1.0.img
+```
+
+
 ## GATK Mutect2 somatic variant calling workflow
 
-Reference files used by Mutect2 caller:
+### Reference files used by Mutect2 caller
 
 | file name | size | md5sum |
 |--------------------------------|------------|----------------------------------|
@@ -186,4 +212,31 @@ for the Mutect2 workflow. To get the files you may just clone the repo, or downl
 
 ```
 wget https://raw.githubusercontent.com/icgc-argo/gatk-mutect2-variant-calling/main/assets/mutect2.scatter_by_chr/chr1.interval_list
+```
+
+### Singularity image files for GATK Mutect2 variant caller (v4.1.8.0-6.0)
+| file name | size | md5sum |
+|--------------------------------|------------|----------------------------------|
+| ghcr.io-icgc-argo-data-processing-utility-tools.cleanup-workdir-1.0.0.img | 27754496 | af288fdac6358050eacf0be4e9e364f1 |
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-add-uniform-ids-0.1.1.img | 57327616 | 06fc2f3972d6fff8159da573a11e6ae4 |
+| ghcr.io-icgc-argo-data-processing-utility-tools.payload-gen-variant-calling-0.6.0.img | 304177152 | dce06ee121749bf4e33f78ca8b636d45 |
+| quay.io-icgc-argo-gatk-calculate-contamination-gatk-calculate-contamination.4.1.8.0-3.1.img | 1838567424 | 0f77f1a19c384063182666da5026abd4 |
+| quay.io-icgc-argo-gatk-filter-mutect-calls-gatk-filter-mutect-calls.4.1.8.0-2.2.img | 1838567424 | 22ce023cd43c01a13ab1e5c0a4b97b88 |
+| quay.io-icgc-argo-gatk-gather-pileup-summaries-gatk-gather-pileup-summaries.4.1.8.0-3.0.img | 1838567424 | c785b55d1733fdb35f24e52ceb0d3f31 |
+| quay.io-icgc-argo-gatk-get-pileup-summaries-gatk-get-pileup-summaries.4.1.8.0-2.1.img | 1838567424 | c071566fc75e98036febfeb58d4cecde |
+| quay.io-icgc-argo-gatk-learn-read-orientation-model-gatk-learn-read-orientation-model.4.1.8.0-2.0.img | 1838567424 | 39c346c5c50b90b8a514e612349ae6c2 |
+| quay.io-icgc-argo-gatk-merge-mutect-stats-gatk-merge-mutect-stats.4.1.8.0-2.0.img | 1838567424 | 644a46e8235db421b99d76080ecaa39f |
+| quay.io-icgc-argo-gatk-merge-vcfs-gatk-merge-vcfs.4.1.8.0-2.0.img | 1838567424 | 6599e29c8ef6d22ec8c7f266386f3f25 |
+| quay.io-icgc-argo-gatk-mutect2-gatk-mutect2.4.1.8.0-2.2.img | 1838567424 | 88b24c4e2fa255f1cbfe8e5abbd4d1dd |
+| quay.io-icgc-argo-gatk-select-variants-gatk-select-variants.4.1.8.0-1.0.img | 1838567424 | 9bcc8d0028f643c99c0b812d07468e9a |
+| quay.io-icgc-argo-prep-mutect2-qc-prep-mutect2-qc.0.1.2.0.img | 304037888 | 76211e21aa690ecbaa14446a110b65e3 |
+
+If you plan to run Sanger using Singularity, these image files need to be downloaded and transferred to
+a path where is accessible to all compute nodes running Nextflow tasks. You would also need to set
+the *singularity.cacheDir* to this path in the *nextflow.config* file.
+
+To download the images, please follow the example below:
+
+```
+wget https://object.cancercollaboratory.org:9080/swift/v1/argo-singularity-images/quay.io-icgc-argo-gatk-mutect2-gatk-mutect2.4.1.8.0-2.2.img
 ```
