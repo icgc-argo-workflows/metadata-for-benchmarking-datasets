@@ -3,6 +3,22 @@
 Reference files used by AROG workflows and Singularity images are hosted at [Cancer Genome Collaboratory](https://cancercollaboratory.org/). Please see the individual sections for the reference files and how
 to download and stage them before running the workflows.
 
+## Overview of reference data directory structure
+
+Below is the high level directory structure:
+```
+genomics-public-data
+├── gatk-resources
+├── open-access-regions
+├── reference-genome
+│   └── GRCh38_hla_decoy_ebv
+├── sanger-variant-calling
+└── test-datasets
+```
+
+More detailes can be found [here](reference-data-organization.md)
+
+
 ## BWA-MEM DNA-Seq Alignment Workflow
 
 ### GRCh38 reference genome sequencing and auxilary files
