@@ -13,6 +13,7 @@ genomics-public-data
 ├── reference-genome
 │   └── GRCh38_hla_decoy_ebv
 ├── sanger-variant-calling
+├── sequenza_references
 └── test-datasets
 ```
 

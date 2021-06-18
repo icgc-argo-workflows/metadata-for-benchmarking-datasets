@@ -38,5 +38,7 @@ genomics-public-data
 │   ├── VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz
 │   ├── core_ref_GRCh38_hla_decoy_ebv.tar.gz
 │   └── qcGenotype_GRCh38_hla_decoy_ebv.tar.gz
+├── sequenza_references
+│   └── hg38.gc50Base.wig.gz
 └── test-datasets
 ```
