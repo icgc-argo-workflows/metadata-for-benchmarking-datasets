@@ -1,0 +1,26 @@
+{
+  "study_id": "CESC-US",
+  "tumour_aln_metadata": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO48977/T.SA517453/dna-seq-alignment/DnaAln_pGenDnaAln/6dda6c04-4b03-4fa6-a254-3462226724ba.dna_alignment.payload.json",
+  "tumour_aln_cram": "/slgpfs/scratch/bsc96/bsc96452/ARGO/WGS/batch_1/T.SA517453/outdir/DnaAln_pGenDnaAln/out/CESC-US.DO48977.SA517453.wgs.20210317.aln.cram",
+  "tumour_extra_info": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO48977/T.SA517453/extra_info.tsv",
+  "normal_aln_metadata": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO48977/N.SA517460/dna-seq-alignment/DnaAln_pGenDnaAln/9df01da8-017a-43b7-8356-d366406173ee.dna_alignment.payload.json",
+  "normal_aln_cram": "/slgpfs/scratch/bsc96/bsc96452/ARGO/WGS/batch_1/N.SA517460/outdir/DnaAln_pGenDnaAln/out/CESC-US.DO48977.SA517460.wgs.20210316.aln.cram",
+  "normal_extra_info": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO48977/N.SA517460/extra_info.tsv",
+  "publish_dir": "sanger-wgs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {
+    "ref_genome_fa": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  },
+  "sangerWgsVariantCaller": {
+    "cpus": 8,
+    "mem": 72,
+    "ref_genome_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "ref_cnv_sv_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz",
+    "qcset_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/qcGenotype_GRCh38_hla_decoy_ebv.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }
+}

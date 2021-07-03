@@ -1,0 +1,26 @@
+{
+  "study_id": "OV-US",
+  "tumour_aln_metadata": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO29850/T.SA520122/dna-seq-alignment/DnaAln_pGenDnaAln/9da6cbd1-7f28-4d95-951c-634474bfdb6c.dna_alignment.payload.json",
+  "tumour_aln_cram": "/slgpfs/scratch/bsc96/bsc96452/ARGO/WGS/batch_1/T.SA520122/outdir/DnaAln_pGenDnaAln/out/OV-US.DO29850.SA520122.wgs.20210315.aln.cram",
+  "tumour_extra_info": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO29850/T.SA520122/extra_info.tsv",
+  "normal_aln_metadata": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO29850/N.SA518178/dna-seq-alignment/DnaAln_pGenDnaAln/623e33c3-bde6-4f5e-891b-259b46b5f7d1.dna_alignment.payload.json",
+  "normal_aln_cram": "/slgpfs/scratch/bsc96/bsc96452/ARGO/WGS/batch_1/N.SA518178/outdir/DnaAln_pGenDnaAln/out/OV-US.DO29850.SA518178.wgs.20210314.aln.cram",
+  "normal_extra_info": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO29850/N.SA518178/extra_info.tsv",
+  "publish_dir": "sanger-wgs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {
+    "ref_genome_fa": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  },
+  "sangerWgsVariantCaller": {
+    "cpus": 8,
+    "mem": 72,
+    "ref_genome_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "ref_cnv_sv_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz",
+    "qcset_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/qcGenotype_GRCh38_hla_decoy_ebv.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }
+}

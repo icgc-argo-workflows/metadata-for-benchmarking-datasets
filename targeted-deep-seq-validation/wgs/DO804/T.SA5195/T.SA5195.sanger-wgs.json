@@ -1,0 +1,26 @@
+{
+  "study_id": "BLCA-US",
+  "tumour_aln_metadata": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO804/T.SA5195/dna-seq-alignment/DnaAln_pGenDnaAln/2038006b-3d16-4a71-b6d8-e3116beb9afa.dna_alignment.payload.json",
+  "tumour_aln_cram": "/slgpfs/scratch/bsc96/bsc96452/ARGO/WGS/batch_1/T.SA5195/outdir/DnaAln_pGenDnaAln/out/BLCA-US.DO804.SA5195.wgs.20210317.aln.cram",
+  "tumour_extra_info": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO804/T.SA5195/extra_info.tsv",
+  "normal_aln_metadata": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO804/N.SA5237/dna-seq-alignment/DnaAln_pGenDnaAln/a623b93e-e495-41cd-874e-b2f279c7cd88.dna_alignment.payload.json",
+  "normal_aln_cram": "/slgpfs/scratch/bsc96/bsc96452/ARGO/WGS/batch_1/N.SA5237/outdir/DnaAln_pGenDnaAln/out/BLCA-US.DO804.SA5237.wgs.20210317.aln.cram",
+  "normal_extra_info": "/Users/rroyo/Projects/ARGO/git/metadata-for-benchmarking-datasets/targeted-deep-seq-validation/wgs/DO804/N.SA5237/extra_info.tsv",
+  "publish_dir": "sanger-wgs-variant-calling",
+  "cpus": 2,
+  "mem": 4,
+
+  "generateBas": {
+    "ref_genome_fa": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/../reference_genome/GRCh38_hla_decoy_ebv.fa"
+  },
+  "sangerWgsVariantCaller": {
+    "cpus": 8,
+    "mem": 72,
+    "ref_genome_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz",
+    "vagrent_annot": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz",
+    "ref_snv_indel_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz",
+    "ref_cnv_sv_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz",
+    "qcset_tar": "/slgpfs/scratch/bsc96/bsc96452/ARGO/reference/qcGenotype_GRCh38_hla_decoy_ebv.tar.gz",
+    "exclude": "chrUn%,HLA%,%_alt,%_random,chrM,chrEBV"
+  }
+}
