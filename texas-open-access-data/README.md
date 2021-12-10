@@ -8,6 +8,7 @@ open access pilot](https://www.nature.com/articles/sdata201610).
 
 
 ## ARGO Pipelines Processed Datasets
+```
 benchmark-datasets/TCRB-CA/
 ├── DO262483
     ├── RNA-Seq
@@ -26,3 +27,4 @@ benchmark-datasets/TCRB-CA/
         ├── TCRB-CA.DO262483.small_slice.tgz
         ├── TCRB-CA.DO262483.tiny_crop.tgz
         └──TCRB-CA.DO262483.tiny_slice.tgz
+```
