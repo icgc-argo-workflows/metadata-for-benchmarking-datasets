@@ -10,18 +10,6 @@ GATK Mutect2 Variant Calling|variant_calling|Simple Nucleotide Variation|tumour|
 GATK Mutect2 Variant Calling|variant_calling|Simple Nucleotide Variation|tumour|VCF|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/variant_calling/tumour/TCRB-CA.DO262483.SA622771.wgs.20211209.gatk-mutect2.somatic.indel.vcf.gz
 GATK Mutect2 Variant Calling|variant_calling|Simple Nucleotide Variation|tumour|TBI|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/variant_calling/tumour/TCRB-CA.DO262483.SA622771.wgs.20211209.gatk-mutect2.somatic.indel.vcf.gz.tbi
 
-## ARGO Pipelines Processed WGS - Metadata
-**ARGO WorkflowName**|**analysisType**|**DataCategory**|**tumourNormalDesignation**|**FileType**|**OpenBucketURL**
-:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
-DNA Seq Alignment|sequencing_alignment|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/sequencing_alignment/tumour/f31834bc-fc8b-4bec-9834-bcfc8babecf4.sequencing_alignment.json
-DNA Seq Alignment|sequencing_alignment|Metadata|normal|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/sequencing_alignment/normal/e6207a9d-d134-486f-a07a-9dd134486f82.sequencing_alignment.json
-DNA Seq Alignment|qc_metrics|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/tumour/ffd8176a-62db-4dbb-9817-6a62db2dbb97.qc_metrics.json
-DNA Seq Alignment|qc_metrics|Metadata|normal|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/normal/c0e5e3fb-6da6-4c8f-a5e3-fb6da63c8f5d.qc_metrics.json
-GATK Mutect2 Variant Calling|variant_calling|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/variant_calling/tumour/b97a8a3f-ad63-4215-ba8a-3fad63c215c7.variant_calling.json
-GATK Mutect2 Variant Calling|variant_calling|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/variant_calling/tumour/44193e58-89ad-434a-993e-5889ad434a8c.variant_calling.json
-GATK Mutect2 Variant Calling|qc_metrics|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/tumour/9b5a6c13-caa5-492d-9a6c-13caa5192db1.qc_metrics.json
-
-
 ## ARGO Pipelines Processed WGS - QC Metrics
 **ARGO WorkflowName**|**analysisType**|**DataCategory**|**tumourNormalDesignation**|**FileType**|**OpenBucketURL**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -41,3 +29,14 @@ GATK Mutect2 Variant Calling|qc_metrics|Quality Control Metrics|tumour|TGZ|https
 GATK Mutect2 Variant Calling|qc_metrics|Quality Control Metrics|tumour|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/tumour/TCRB-CA.DO262483.SA622771.wgs.20211209.gatk-mutect2.somatic.mutect_callable_metrics.tgz
 GATK Mutect2 Variant Calling|qc_metrics|Quality Control Metrics|tumour|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/tumour/TCRB-CA.DO262483.SA622771.wgs.20211209.gatk-mutect2.somatic.contamination_metrics.tgz
 GATK Mutect2 Variant Calling|qc_metrics|Quality Control Metrics|tumour|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/tumour/TCRB-CA.DO262483.SA622770.wgs.20211209.gatk-mutect2.somatic.contamination_metrics.tgz
+
+## ARGO Pipelines Processed WGS - Metadata
+**ARGO WorkflowName**|**analysisType**|**DataCategory**|**tumourNormalDesignation**|**FileType**|**OpenBucketURL**
+:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
+DNA Seq Alignment|sequencing_alignment|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/sequencing_alignment/tumour/f31834bc-fc8b-4bec-9834-bcfc8babecf4.sequencing_alignment.json
+DNA Seq Alignment|sequencing_alignment|Metadata|normal|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/sequencing_alignment/normal/e6207a9d-d134-486f-a07a-9dd134486f82.sequencing_alignment.json
+DNA Seq Alignment|qc_metrics|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/tumour/ffd8176a-62db-4dbb-9817-6a62db2dbb97.qc_metrics.json
+DNA Seq Alignment|qc_metrics|Metadata|normal|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/normal/c0e5e3fb-6da6-4c8f-a5e3-fb6da63c8f5d.qc_metrics.json
+GATK Mutect2 Variant Calling|variant_calling|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/variant_calling/tumour/b97a8a3f-ad63-4215-ba8a-3fad63c215c7.variant_calling.json
+GATK Mutect2 Variant Calling|variant_calling|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/variant_calling/tumour/44193e58-89ad-434a-993e-5889ad434a8c.variant_calling.json
+GATK Mutect2 Variant Calling|qc_metrics|Metadata|tumour|JSON|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/qc_metrics/tumour/9b5a6c13-caa5-492d-9a6c-13caa5192db1.qc_metrics.json
