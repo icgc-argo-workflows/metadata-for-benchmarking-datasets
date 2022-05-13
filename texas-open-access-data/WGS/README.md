@@ -1,4 +1,4 @@
-## ARGO Pipelines Processed WGS Datasets
+## ARGO Pipelines Processed WGS - Alignment/Variant Calling Datasets
 **ARGO WorkflowName**|**analysisType**|**DataCategory**|**tumourNormalDesignation**|**FileType**|**OpenBucketURL**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 DNA Seq Alignment|sequencing_alignment|Sequencing Reads|tumour|CRAM|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/WGS/sequencing_alignment/tumour/TCRB-CA.DO262483.SA622771.wgs.20211117.aln.cram
