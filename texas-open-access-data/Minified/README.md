@@ -67,10 +67,10 @@ Benchmark datasets info
 
 **FileName**|**FileSize**|**FileType**|**OpenBucketURL**
 :-----:|:-----:|:-----:|:-----:
-TCRB-CA.DO262483.minimal.tgz|20832323|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.minimal.tgz
-TCRB-CA.DO262483.minimal_multi_chr.tgz|78414105|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.minimal_multi_chr.tgz
-TCRB-CA.DO262483.small_crop.tgz|10662870245|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.small_crop.tgz
-TCRB-CA.DO262483.small_slice.tgz|94020121|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.small_slice.tgz
-TCRB-CA.DO262483.tiny_crop.tgz|6298466484|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.tiny_crop.tgz
-TCRB-CA.DO262483.tiny_slice.tgz|12465449|TGZ|https://object.cancercollaboratory.org:9080/swift/v1/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.tiny_slice.tgz
+TCRB-CA.DO262483.minimal.tgz|20832323|TGZ|https://object.genomeinformatics.org/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.minimal.tgz
+TCRB-CA.DO262483.minimal_multi_chr.tgz|78414105|TGZ|https://object.genomeinformatics.org/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.minimal_multi_chr.tgz
+TCRB-CA.DO262483.small_crop.tgz|10662870245|TGZ|https://object.genomeinformatics.org/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.small_crop.tgz
+TCRB-CA.DO262483.small_slice.tgz|94020121|TGZ|https://object.genomeinformatics.org/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.small_slice.tgz
+TCRB-CA.DO262483.tiny_crop.tgz|6298466484|TGZ|https://object.genomeinformatics.org/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.tiny_crop.tgz
+TCRB-CA.DO262483.tiny_slice.tgz|12465449|TGZ|https://object.genomeinformatics.org/genomics-public-data/benchmark-datasets/TCRB-CA/DO262483/minified/TCRB-CA.DO262483.tiny_slice.tgz
 
